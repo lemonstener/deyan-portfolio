@@ -1,3 +1,9 @@
+/* GENERAL */
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   background-image: url(https://i.pinimg.com/originals/d2/51/9f/d2519f97a780645b9b5335c3460ce25a.gif);
   background-size: cover;
@@ -7,12 +13,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* NAV */
+
 .navbar {
-  position: absolute;
-  top: 5%;
   width: 100%;
+  height: 13vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,12 +32,13 @@ body {
 .nav-btn {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   font-size: 2.5rem;
-  margin: 3% 5%;
+  margin: 5% 2%;
   cursor: pointer;
-  color: rgba(59, 89, 152, 0.3);
-  transition: color 0.1s;
+  color: rgba(0, 0, 0, 0.5);
+  transition: color 0.2s;
 }
 
 .nav-btn:hover {
@@ -34,9 +46,42 @@ body {
 }
 
 .nav-btn:hover .text {
+  visibility: visible;
+  top: -20px;
+}
+
+.active {
+  color: #25a18e;
 }
 
 .text {
   font-size: 1rem;
-  margin: 4%;
+  font-weight: 900px;
+  margin-bottom: 4%;
+  visibility: hidden;
+  position: relative;
+  top: 0;
+  transition: top ease 0.2s;
+}
+
+/* PANEL */
+
+.panel {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 90vw;
+  height: 70vh;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 5px 5px black;
+}
+
+/* HOME */
+
+.pic {
+  background-image: url(https://github.com/lemonstener/frog-feast/blob/master/images/me.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 80%;
 }
