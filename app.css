@@ -1,0 +1,42 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/d2/51/9f/d2519f97a780645b9b5335c3460ce25a.gif);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+  margin: 3% 5%;
+  cursor: pointer;
+  color: rgba(59, 89, 152, 0.3);
+  transition: color 0.1s;
+}
+
+.nav-btn:hover {
+  color: rgb(59, 89, 152);
+}
+
+.nav-btn:hover .text {
+}
+
+.text {
+  font-size: 1rem;
+  margin: 4%;
+}
