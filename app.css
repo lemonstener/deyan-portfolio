@@ -39,6 +39,7 @@ body {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
   transition: color 0.2s;
+  width: 3%;
 }
 
 .nav-btn:hover {
@@ -64,24 +65,20 @@ body {
   transition: top ease 0.2s;
 }
 
-/* PANEL */
-
-.panel {
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 90vw;
-  height: 70vh;
-  border-radius: 20px;
-  border: 2px solid black;
-  box-shadow: 0 5px 5px black;
-}
-
 /* HOME */
 
-.pic {
-  background-image: url(https://github.com/lemonstener/frog-feast/blob/master/images/me.png?raw=true);
+.profile {
+  width: 80vw;
+  height: 60vh;
+  margin-top: 10vh;
+  background-image: url(f2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 40%;
-  height: 80%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
