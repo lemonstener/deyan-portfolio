@@ -1,38 +1,24 @@
 // VARIABLES
+const wrapper = document.querySelector(".wrapper");
+const quarters = document.querySelectorAll(".quarter");
 
-const home = document.querySelector(".home");
-const projects = document.querySelector(".projects");
-const contact = document.querySelector(".contact");
-const panel = document.querySelector(".panel");
+const links = {
+  home: home(),
+  about: about(),
+  projects: projects(),
+  contact: contact(),
+};
 
-// GENERAL
+// GENERAL FUNCTIONALITY
 
-home.addEventListener("click", toggleHome);
-projects.addEventListener("click", toggleProjects);
-contact.addEventListener("click", toggleContact);
-
-function removeActive() {
-  const prev = document.querySelector(".active");
-  prev.classList.remove("active");
+function toggle(slice) {
+  const open =
+    slice.parentElement.className === "wrapper" ? slice : slice.parentElement;
+  console.log(open);
 }
 
-// HOME
-
-function toggleHome() {
-  removeActive();
-  home.classList.add("active");
-}
-
-// PROJECTS
-
-function toggleProjects() {
-  removeActive();
-  projects.classList.add("active");
-}
-
-// CONTACT
-
-function toggleContact() {
-  removeActive();
-  contact.classList.add("active");
-}
+quarters.forEach((slice) => {
+  slice.addEventListener("click", function (e) {
+    toggle(e.target);
+  });
+});

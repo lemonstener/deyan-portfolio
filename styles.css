@@ -1,0 +1,91 @@
+.home {
+  background-color: #fe4a49;
+}
+
+.about {
+  left: 45vw;
+  background-color: #32ec44;
+}
+
+.projects {
+  background-color: #009fb7;
+}
+
+.contact {
+  background-color: #fed766;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+div.wrapper {
+  cursor: pointer;
+  margin: 15% auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50px;
+}
+
+div.quarter {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(51, 51, 51, 0.9);
+  transition: transform 0.5s, opacity 0.5s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.quarter i {
+  font-size: 2rem;
+}
+
+div.quarter p {
+  visibility: hidden;
+}
+
+div.quarter.left-top {
+  left: 0;
+  top: 0;
+  border-top-left-radius: 200px;
+}
+div.quarter.right-top {
+  left: 200px;
+  top: 0;
+  border-top-right-radius: 200px;
+}
+div.quarter.left-bottom {
+  left: 0;
+  top: 200px;
+  border-bottom-left-radius: 200px;
+}
+div.quarter.right-bottom {
+  left: 200px;
+  top: 200px;
+  border-bottom-right-radius: 200px;
+}
+div.wrapper:hover div.quarter {
+  opacity: 0.5;
+}
+div.quarter:hover {
+  opacity: 1 !important;
+  transform: scale(1.5);
+  box-shadow: 1px 1px 10px 1px;
+}
+
+div.quarter:hover p {
+  visibility: visible;
+}

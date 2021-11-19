@@ -4,32 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simon says experiment</title>
 </head>
 <body>
-    
-    <div class="navbar">
-        <div class="nav-btn home active">
-            <span class="text">HOME</span>
-            <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="nav-btn projects">
-            <span class="text">PROJECTS</span>
-            <i class="fa-solid fa-briefcase"></i>
-        </div>
-        <div class="nav-btn contact">
-            <span class="text">CONTACT</span>
-            <i class="fa-solid fa-envelope-open-text"></i>
-        </div>
-    </div>
 
-    <div class="profile"></div>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    
+    <div class="wrapper">
+        <div id="home" class="quarter left-top"><p>HOME</p><i class="fas fa-home"></i></div>
+        <div id="about" class="quarter right-top"><p>ABOUT</p><i class="fas fa-user-alt"></i></div>
+        <div id="projects" class="quarter left-bottom"><i class="fas fa-folder"></i><p>PROJECTS</p></div>
+        <div id="contact" class="quarter right-bottom"><i class="fas fa-phone"></i><p>CONTACT</p></div>
+      </div>
 
     <script src="app.js"></script>
 </body>
