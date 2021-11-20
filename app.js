@@ -6,8 +6,6 @@ const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 const contact = document.querySelector("#contact");
-
-const qArr = ["home", "about", "projects", "contact"];
 let current = null;
 
 const links = {
@@ -40,76 +38,75 @@ function setInitial() {
   about.innerHTML = '<p>ABOUT</p><i class="fas fa-user-alt"></i>';
   projects.innerHTML = '<i class="fas fa-folder"></i><p>PROJECTS</p>';
   contact.innerHTML = '<i class="fas fa-phone"></i><p>CONTACT</p>';
+  quarters.forEach((q) => {
+    q.addEventListener("click", toggle, true);
+  });
 }
 
 // GENERAL FUNCTIONALITY
 
-function toggle(slice) {
-  console.log(slice.tagName);
-  slice.tagName === "DIV"
-    ? (current = slice.id)
-    : (current = slice.parentElement.id);
-  highlight(current);
-  links[current].call();
+function toggle() {
+  current = this;
+  quarters.forEach((q) => {
+    q.removeEventListener("click", toggle, true);
+  });
+  highlight();
+  // links[current].call();
 }
-
-function back() {
-  wrapper.style.borderRadius = "400px";
-  wrapper.style.boxShadow = "1px 1px 10px 1px cyan";
-  for (let slice of quarters) {
-    slice.style.width = "200px";
-    slice.style.height = "200px";
-    slice.style.opacity = "1";
-    slice.style.zIndex = "1";
-    slice.style.borderRadius = "0";
-    if (slice.id === "home") {
-      slice.style.borderTopLeftRadius = "200px";
-      slice.style.left = "0";
-      slice.style.top = "0";
-    } else if (slice.id === "about") {
-      slice.style.borderTopRightRadius = "200px";
-      slice.style.left = "200px";
-      slice.style.top = 0;
-    } else if (slice.id === "projects") {
-      slice.style.borderBottomLeftRadius = "200px";
-      slice.style.left = 0;
-      slice.style.top = "200px";
-    } else {
-      slice.style.borderBottomRightRadius = "200px";
-      slice.style.top = "200px";
-      slice.style.left = "200px";
-    }
-  }
-  setInitial();
-}
-
-// EVENT LISTENERS
-
-wrapper.addEventListener("click", function (e) {
-  toggle(e.target);
-});
 
 function highlight() {
   wrapper.style.border = "none";
   wrapper.style.boxShadow = "none";
-  for (let q of qArr) {
-    const slice = document.querySelector(`#${q}`);
+  for (let q of quarters) {
     if (q !== current) {
-      slice.style.width = "0";
-      slice.style.height = "0";
-      slice.style.opacity = "0";
-      slice.style.zIndex = "-1";
+      q.style.width = "0";
+      q.style.height = "0";
+      q.style.opacity = "0";
+      q.style.zIndex = "-1";
+      q.innerHTML = "";
     } else {
-      slice.style.width = "100%";
-      slice.style.height = "100%";
-      slice.style.top = "10vh";
-      slice.style.left = "0";
-      slice.style.borderRadius = "10px";
-      slice.innerHTML = '<i class="fas fa-times-circle close"></i>';
+      q.style.width = "100%";
+      q.style.height = "100%";
+      q.style.top = "10vh";
+      q.style.left = "0";
+      q.style.borderRadius = "10px";
+      q.innerHTML = '<i class="fas fa-times-circle close"></i>';
     }
   }
   const close = document.querySelector(".close");
   close.addEventListener("click", back);
+}
+
+function back() {
+  current.style.borderRadius = "0";
+  wrapper.style.borderRadius = "400px";
+  wrapper.style.boxShadow = "1px 1px 10px 1px cyan";
+  document.querySelector(".close").removeEventListener("click", back);
+  for (q of quarters) {
+    q.style.width = "200px";
+    q.style.height = "200px";
+    q.style.opacity = "1";
+    q.style.zIndex = "1";
+  }
+  if (current === home) {
+    current.style.borderTopLeftRadius = "200px";
+    current.style.left = "0";
+    current.style.top = "0";
+  } else if (current === about) {
+    current.style.borderTopRightRadius = "200px";
+    current.style.left = "200px";
+    current.style.top = 0;
+  } else if (current === projects) {
+    current.style.borderBottomLeftRadius = "200px";
+    current.style.left = 0;
+    current.style.top = "200px";
+  } else {
+    current.style.borderBottomRightRadius = "200px";
+    current.style.top = "200px";
+    current.style.left = "200px";
+  }
+
+  setInitial();
 }
 
 function showHome() {}
