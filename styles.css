@@ -1,4 +1,7 @@
-/* BALL */
+/* BODY GENERAL */
+html {
+  font-family: "Inconsolata", monospace;
+}
 
 #background-video {
   width: 100vw;
@@ -12,6 +15,8 @@
   z-index: -1;
 }
 
+/* BALL */
+
 div.wrapper {
   transition: opacity 0.5s;
   cursor: pointer;
@@ -22,6 +27,8 @@ div.wrapper {
   border-radius: 50px;
   box-shadow: 1px 1px 10px 1px cyan;
   border-radius: 400px;
+  text-align: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 div.quarter {
@@ -36,13 +43,15 @@ div.quarter {
   justify-content: center;
   align-items: center;
   opacity: 1;
+  overflow: hidden;
 }
 
 div.quarter i {
   font-size: 2rem;
 }
 
-div.quarter p {
+div.quarter span {
+  margin: 10px;
   visibility: hidden;
 }
 
@@ -81,6 +90,89 @@ div.quarter:hover {
   background-color: rgba(51, 51, 51, 1);
 }
 
-div.quarter:hover p {
+div.quarter:hover span {
   visibility: visible;
+}
+
+div.quarter:hover .close {
+  visibility: visible;
+  top: 5px;
+}
+
+/* CLOSE BUTTON */
+
+.close {
+  visibility: hidden;
+  position: absolute;
+  top: -50px;
+  text-shadow: none;
+  transition: top 0.2s;
+}
+
+/* HOME */
+
+.home-panel {
+  background-image: url(deyan.jpeg);
+  background-position: bottom;
+  background-size: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90%;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.home-info {
+  margin-bottom: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.home-panel:hover .home-info {
+  background-color: rgba(51, 51, 51, 1);
+}
+
+/* ABOUT */
+
+.about-text {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  margin: 4px;
+  transition: left 0.3s;
+}
+
+.about-skills {
+  width: 100%;
+  position: absolute;
+  left: 1000px;
+  transition: left 0.3s;
+}
+
+.about-btn {
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  text-shadow: none;
+  padding: 4px;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 4px;
+}
+
+.about-btn:hover {
+  width: 40%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 5px 1px cyan;
+}
+
+/* CONTACT */
+
+#contact a {
+  margin: 30px;
+  color: white;
 }
