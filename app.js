@@ -57,6 +57,7 @@ function toggle() {
 function highlight() {
   wrapper.style.border = "none";
   wrapper.style.boxShadow = "none";
+  wrapper.style.width = "500px";
   for (let q of quarters) {
     if (q !== current) {
       q.style.height = "0";
@@ -78,6 +79,7 @@ function highlight() {
 function back() {
   current.style.borderRadius = "0";
   wrapper.style.borderRadius = "400px";
+  wrapper.style.width = "400px";
   wrapper.style.boxShadow = "1px 1px 10px 1px cyan";
   document.querySelector(".close").removeEventListener("click", back);
   for (q of quarters) {

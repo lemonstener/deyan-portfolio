@@ -107,6 +107,7 @@ div.quarter:hover .close {
   top: -50px;
   text-shadow: none;
   transition: top 0.2s;
+  width: 60px;
 }
 
 /* HOME */
@@ -138,10 +139,10 @@ div.quarter:hover .close {
 /* ABOUT */
 
 .about-text {
-  width: 100%;
+  width: 90%;
   position: absolute;
   left: 0;
-  margin: 4px;
+  margin: 5%;
   transition: left 0.3s;
 }
 
