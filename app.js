@@ -6,7 +6,10 @@ const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const projects = document.querySelector("#projects");
 const contact = document.querySelector("#contact");
+const audio = document.querySelector("audio");
+const equalizer = document.querySelector(".equalizer");
 let current = null;
+let music = true;
 
 const links = {
   home: {
@@ -216,5 +219,21 @@ function showContact() {
 
   contact.append(panel);
 }
+
+function toggleMusic() {
+  if (music) {
+    audio.pause();
+    music = false;
+    equalizer.style.filter = "grayscale(100%)";
+    equalizer.innerHTML = '<i class="fas fa-play"></i>';
+  } else {
+    audio.play();
+    music = true;
+    equalizer.style.filter = "grayscale(0)";
+    equalizer.innerHTML = '<i class="fas fa-pause"></i>';
+  }
+}
+
+equalizer.addEventListener("click", toggleMusic);
 
 setInitial();

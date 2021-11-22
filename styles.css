@@ -15,6 +15,39 @@ html {
   z-index: -1;
 }
 
+/* EQUALIZER */
+
+.equalizer {
+  cursor: pointer;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  background-image: url(equalizer.gif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.equalizer i {
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  visibility: hidden;
+  top: 20px;
+  transition: top 0.2s;
+}
+
+.equalizer:hover {
+  transform: scale(1.4);
+}
+
+.equalizer:hover i {
+  top: -20px;
+  visibility: visible;
+}
+
 /* BALL */
 
 div.wrapper {
@@ -102,6 +135,10 @@ div.quarter:hover span {
 div.quarter:hover .close {
   visibility: visible;
   top: 5px;
+}
+
+div.wrapper:hover .equalizer {
+  opacity: 0.5;
 }
 
 /* CLOSE BUTTON */
