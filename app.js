@@ -169,6 +169,14 @@ function showAbout() {
   btn.addEventListener("click", function () {
     switchAbout(btn.id);
   });
+  btn.addEventListener("mouseover", function () {
+    btn.classList.add("jello-vertical");
+    btn.classList.add("about-btn-highlight");
+  });
+  btn.addEventListener("mouseout", function () {
+    btn.classList.remove("jello-vertical");
+    btn.classList.remove("about-btn-highlight");
+  });
 }
 
 function switchAbout(arg) {
