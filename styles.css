@@ -90,6 +90,11 @@ div.quarter:hover {
   background-color: rgba(51, 51, 51, 1);
 }
 
+.focus {
+  transform: scale(1.2);
+  background-color: rgba(51, 51, 51, 1) !important;
+}
+
 div.quarter:hover span {
   visibility: visible;
 }
@@ -106,8 +111,14 @@ div.quarter:hover .close {
   position: absolute;
   top: -50px;
   text-shadow: none;
-  transition: top 0.2s;
-  width: 60px;
+  transition: all 0.1s;
+  border-radius: 50%;
+}
+
+.close:hover {
+  top: -100px;
+  transform: scale(1.2);
+  box-shadow: 1px 1px 10px 1px cyan;
 }
 
 /* HOME */
@@ -160,7 +171,7 @@ div.quarter:hover .close {
   color: black;
   text-shadow: none;
   padding: 4px;
-  transition: all 0.3s;
+  transition: all 0.1s;
   position: absolute;
   bottom: 10px;
 }

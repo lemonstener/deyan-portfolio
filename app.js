@@ -47,6 +47,7 @@ function setInitial() {
 
 function toggle() {
   current = this;
+  current.classList.add("focus");
   quarters.forEach((q) => {
     q.removeEventListener("click", toggle, true);
   });
@@ -77,6 +78,7 @@ function highlight() {
 }
 
 function back() {
+  current.classList.remove("focus");
   current.style.borderRadius = "0";
   wrapper.style.borderRadius = "400px";
   wrapper.style.width = "400px";
