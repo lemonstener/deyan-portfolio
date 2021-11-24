@@ -39,6 +39,15 @@ html {
   transition: top 0.2s;
 }
 
+.equalizer p {
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  visibility: hidden;
+  top: 20px;
+  transition: top 0.2s;
+}
+
 .equalizer:hover {
   transform: scale(1.4);
 }
@@ -48,12 +57,17 @@ html {
   visibility: visible;
 }
 
+.equalizer:hover p {
+  top: -20px;
+  visibility: visible;
+}
+
 /* BALL */
 
 div.wrapper {
   transition: opacity 0.5s;
   cursor: pointer;
-  margin: 15% auto;
+  margin: 10% auto;
   position: relative;
   width: 400px;
   height: 400px;
@@ -191,6 +205,7 @@ div.wrapper:hover .equalizer {
   width: 90%;
   position: absolute;
   left: 0;
+  top: 0;
   margin: 5%;
   transition: left 0.3s;
 }

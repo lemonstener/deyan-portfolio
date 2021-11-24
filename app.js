@@ -9,7 +9,7 @@ const contact = document.querySelector("#contact");
 const audio = document.querySelector("audio");
 const equalizer = document.querySelector(".equalizer");
 let current = null;
-let music = true;
+let music = false;
 
 const links = {
   home: {
