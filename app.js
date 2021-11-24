@@ -39,16 +39,35 @@ const pages = {
     info: "A full stack application for the card game Hearthstone",
     img: "hearth-img.png",
     title: "The Forge",
+    html: `
+    <h1>The Forge</h1>
+    <p>The Forge is a single page, full stack application for the digital
+    card game <b>Hearthstone</b> that allows users to create decks, edit them, 
+    favorite decks made by other users, and browse general information about the cards.</p>
+    <p>
+    Technologies used: <br>
+    
+    <b>Front End:</b> HTML, CSS, JavaScript, Axios <br>
+    <b>Back End:</b> Python 3.7.7, Flask, SQLAlchemy
+    </p>
+    <p>
+    The Forge on GitHub: <a target="_blank" href="https://github.com/lemonstener/hearthstone-forge">HERE</a> <br>
+    Deployed version: <a target="_blank" href="https://hearthstone-forge.herokuapp.com/">HERE</a>
+    </p>
+    <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
+    `,
   },
   frog: {
     info: "A simple browser game I built for a hackathon",
     img: "frog-img.png",
     title: "Frog Feast",
+    html: "Hello",
   },
   jobly: {
     info: "A full stack job searching application",
     img: "jobly-img.png",
     title: "Jobly",
+    html: "Hello",
   },
 };
 
@@ -58,6 +77,7 @@ function setInitial() {
   home.innerHTML = '<span>HOME</span><i class="fas fa-home"></i>';
   about.innerHTML = '<span>ABOUT</span><i class="fas fa-user-alt"></i>';
   projects.innerHTML = '<i class="fas fa-folder"></i><span>PROJECTS</span>';
+  projects.style.backgroundImage = "none";
   contact.innerHTML = '<i class="fas fa-phone"></i><span>CONTACT</span>';
   quarters.forEach((q) => {
     q.addEventListener("click", toggle, true);
@@ -220,6 +240,11 @@ function switchAbout(arg) {
 // PROJECTS PAGE
 
 function showProjects() {
+  try {
+    projects.children[1].remove();
+  } catch (error) {
+    console.log("Nothing to delete");
+  }
   const panel = document.createElement("div");
   const hearth = document.createElement("div");
   const frog = document.createElement("div");
@@ -242,7 +267,10 @@ function showProjects() {
     x.addEventListener("click", showcaseProject);
   });
 
-  panel.append(title, hearth, frog, job, info);
+  const showcase = document.createElement("div");
+  showcase.className = "projects-showcase";
+
+  panel.append(title, hearth, frog, job, info, showcase);
   projects.append(panel);
 }
 
@@ -263,14 +291,35 @@ function resetBackground() {
 }
 
 function showcaseProject() {
-  const showcase = document.createElement("div");
-  showcase.className = "projects-showcase";
+  document.querySelectorAll(".thumb").forEach((t) => {
+    t.remove();
+  });
+  document.querySelector(".projects-title").remove();
+  document.querySelector(".projects-info").remove();
   const panel = document.querySelector(".projects-panel");
-  panel.innerHTML = "";
-  panel.append(showcase);
   projects.style.backgroundImage = `url(${pages[this.id].img})`;
-
+  const showcase = document.querySelector(".projects-showcase");
   showcase.style.top = "0";
+
+  const text = document.createElement("div");
+  text.className = "projects-page";
+  text.innerHTML = pages[this.id].html;
+  showcase.append(text);
+
+  const btn = document.querySelector(".projects-back");
+
+  btn.addEventListener("click", function () {
+    showcase.style.top = "1000px";
+    showProjects();
+  });
+  btn.addEventListener("mouseover", function () {
+    btn.classList.add("jello-vertical");
+    btn.classList.add("projects-back-highlight");
+  });
+  btn.addEventListener("mouseout", function () {
+    btn.classList.remove("jello-vertical");
+    btn.classList.remove("projects-back-highlight");
+  });
 }
 
 // CONTACT PAGE
