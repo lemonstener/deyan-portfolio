@@ -34,6 +34,24 @@ const links = {
   },
 };
 
+const pages = {
+  hearth: {
+    info: "A full stack application for the card game Hearthstone",
+    img: "hearth-img.png",
+    title: "The Forge",
+  },
+  frog: {
+    info: "A simple browser game I built for a hackathon",
+    img: "frog-img.png",
+    title: "Frog Feast",
+  },
+  jobly: {
+    info: "A full stack job searching application",
+    img: "jobly-img.png",
+    title: "Jobly",
+  },
+};
+
 // INITIAL
 
 function setInitial() {
@@ -202,7 +220,57 @@ function switchAbout(arg) {
 // PROJECTS PAGE
 
 function showProjects() {
-  console.log("projects");
+  const panel = document.createElement("div");
+  const hearth = document.createElement("div");
+  const frog = document.createElement("div");
+  const job = document.createElement("div");
+  const title = document.createElement("div");
+  const info = document.createElement("div");
+
+  panel.className = "projects-panel";
+  info.className = "projects-info";
+  info.style.opacity = "0";
+  title.className = "projects-title";
+  title.style.opacity = "0";
+  hearth.id = "hearth";
+  frog.id = "frog";
+  job.id = "jobly";
+  [hearth, frog, job].forEach((x) => {
+    x.className = "thumb";
+    x.addEventListener("mouseover", toggleBackground);
+    x.addEventListener("mouseout", resetBackground);
+    x.addEventListener("click", showcaseProject);
+  });
+
+  panel.append(title, hearth, frog, job, info);
+  projects.append(panel);
+}
+
+function toggleBackground() {
+  const info = document.querySelector(".projects-info");
+  const title = document.querySelector(".projects-title");
+  title.innerText = `${pages[this.id].title}`;
+  title.style.opacity = "1";
+  info.innerText = `${pages[this.id].info}`;
+  info.style.opacity = "1";
+  projects.style.backgroundImage = `url(${pages[this.id].img})`;
+}
+
+function resetBackground() {
+  document.querySelector(".projects-info").style.opacity = "0";
+  document.querySelector(".projects-title").style.opacity = "0";
+  projects.style.backgroundImage = "none";
+}
+
+function showcaseProject() {
+  const showcase = document.createElement("div");
+  showcase.className = "projects-showcase";
+  const panel = document.querySelector(".projects-panel");
+  panel.innerHTML = "";
+  panel.append(showcase);
+  projects.style.backgroundImage = `url(${pages[this.id].img})`;
+
+  showcase.style.top = "0";
 }
 
 // CONTACT PAGE
