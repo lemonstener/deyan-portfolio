@@ -393,12 +393,15 @@ div.wrapper:hover .equalizer {
   height: 100%;
   position: absolute;
   top: 1000px;
-  background-color: rgba(51, 51, 51, 0.6);
+  background-color: rgba(51, 51, 51, 0.9);
   transition: top 0.3s;
 }
 
 .projects-page {
-  margin-top: 10%;
+  margin-top: 8%;
+  padding-left: 2px;
+  padding-right: 2px;
+  box-sizing: content-box;
 }
 
 .projects-page a {

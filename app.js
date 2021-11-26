@@ -61,13 +61,41 @@ const pages = {
     info: "A simple browser game I built for a hackathon",
     img: "frog-img.png",
     title: "Frog Feast",
-    html: "Hello",
+    html: `
+    <h1>Frog Feast</h1>
+    <p>Frog Feast is a simple, browser based game. You are a frog, bugs come
+    from the left and right directions and you must eat them to increase 
+    your score. Don't eat the bees!</p>
+    <p>This Front End only project was made for a hackathon hosted by Mintbean and it 
+    earned me a Mintbean Star, the highest award possible. <br>
+    You can look up the results on <a target="_blank" href="https://hire.mintbean.io/">HERE</a>.</p>
+    <p>
+    Frog Feast on GitHub: <a target="_blank" href="https://github.com/lemonstener/frog-feast">HERE</a> <br>
+    Deployed version: <a target="_blank" href="https://lemonstener.github.io/frog-feast/">HERE</a>
+    </p>
+    <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
+    `,
   },
   jobly: {
     info: "A full stack job searching application",
     img: "jobly-img.png",
     title: "Jobly",
-    html: "Hello",
+    html: `
+    <h1>Jobly</h1>
+    <p>Jobly is a full stack job-searching application. Users can search and 
+    "apply" for positions listed by companies.</p>
+    <p>Registration is needed in order to browse the webpage. Either create an 
+    account or use this one: <br>
+    username: "testuser" <br>
+    password: "password"</p>
+    <p>Technologies used: <br>
+    
+    <b>Front End:<b> React.js, CSS <br>
+    <b>Back End:</b> Node, Express, SQL</p>
+    <p>
+    Deployed version: <a target="_blank" href="https://chunky-tent.surge.sh/">HERE</a>
+    </p>
+    <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>`,
   },
 };
 
@@ -310,14 +338,14 @@ function showcaseProject() {
 
   btn.addEventListener("click", function () {
     showcase.style.top = "1000px";
-    showProjects();
+    setTimeout(function () {
+      showProjects();
+    }, 100);
   });
   btn.addEventListener("mouseover", function () {
-    btn.classList.add("jello-vertical");
     btn.classList.add("projects-back-highlight");
   });
   btn.addEventListener("mouseout", function () {
-    btn.classList.remove("jello-vertical");
     btn.classList.remove("projects-back-highlight");
   });
 }
