@@ -40,7 +40,7 @@ const pages = {
     img: "hearth-img.png",
     title: "The Forge",
     html: `
-    <h1>The Forge</h1>
+    <h2>The Forge</h2>
     <p>The Forge is a single page, full stack application for the digital
     card game <b>Hearthstone</b> that allows users to create decks, edit them, 
     favorite decks made by other users, and browse general information about the cards. <br>
@@ -64,7 +64,7 @@ const pages = {
     img: "frog-img.png",
     title: "Frog Feast",
     html: `
-    <h1>Frog Feast</h1>
+    <h2>Frog Feast</h2>
     <p>Frog Feast is a simple, browser based game. You are a frog, bugs come
     from the left and right directions and you must eat them to increase 
     your score. Don't eat the bees!</p>
@@ -84,8 +84,8 @@ const pages = {
     img: "jobly-img.png",
     title: "Jobly",
     html: `
-    <h1>Jobly</h1>
-    <p>Jobly is a full stack job-searching application. Users can search and 
+    <h2>Jobly</h2>
+    <p>Jobly is a full stack mock job-searching application. Users can search and 
     "apply" for positions listed by companies. <br>
     Completed as part of the Springboard Software Engineering Curriculum.</p>
     <p>You'll need an account so either create one or use this one: <br>
@@ -207,10 +207,11 @@ function showHome() {
 function showAbout() {
   const aboutText = document.createElement("div");
   aboutText.innerHTML = `
-  <h1>About me</h1>
+  <h2>About me</h2>
   <p>I am originally from Bulgaria and have lived in the United States since 2012. 
   For as long as I can remember I've had an interest in coding and computers. 
-  In early 2021, I decided to enroll in Springboard's software engineering bootcamp. 
+  In early 2021, I decided to pursue my passion full time and enroll in 
+  Springboard's software engineering bootcamp. 
   I quickly learned coding is a way to create fun and useful things out of thin air, 
   and I see every problem as a puzzle to be solved. Whether it's front-end or back-end, 
   I am comfortable with creating a project or jumping right in (although I do specialize in JavaScript). 
@@ -223,7 +224,7 @@ function showAbout() {
 
   const aboutSkills = document.createElement("div");
   aboutSkills.innerHTML = `
-  <h1>Skills</h1>
+  <h2>Skills</h2>
   <p>
   <b>Programming Languages:</b> Javascript, Python, SQL <br>
   <b>Front End:</b> HTML, CSS, React.js, Bootstrap, jQuery <br>
