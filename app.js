@@ -43,7 +43,9 @@ const pages = {
     <h1>The Forge</h1>
     <p>The Forge is a single page, full stack application for the digital
     card game <b>Hearthstone</b> that allows users to create decks, edit them, 
-    favorite decks made by other users, and browse general information about the cards.</p>
+    favorite decks made by other users, and browse general information about the cards. <br>
+    Completed as part of the Springboard Software Engineering Curriculum.
+    </p>
     <p>
     Technologies used: <br>
     
@@ -66,9 +68,10 @@ const pages = {
     <p>Frog Feast is a simple, browser based game. You are a frog, bugs come
     from the left and right directions and you must eat them to increase 
     your score. Don't eat the bees!</p>
-    <p>This Front End only project was made for a hackathon hosted by Mintbean and it 
-    earned me a Mintbean Star, the highest award possible. <br>
-    You can look up the results on <a target="_blank" href="https://hire.mintbean.io/">HERE</a>.</p>
+    <p>This Front End only project was built in 7 days for a hackathon hosted by Mintbean and it 
+    earned a Mintbean Star Award for "exemplary achievement in the field of web development."
+    Also playabale on mobile.<br>
+    You can look up the results <a target="_blank" href="https://hire.mintbean.io/">HERE</a>.</p>
     <p>
     Frog Feast on GitHub: <a target="_blank" href="https://github.com/lemonstener/frog-feast">HERE</a> <br>
     Deployed version: <a target="_blank" href="https://lemonstener.github.io/frog-feast/">HERE</a>
@@ -83,9 +86,9 @@ const pages = {
     html: `
     <h1>Jobly</h1>
     <p>Jobly is a full stack job-searching application. Users can search and 
-    "apply" for positions listed by companies.</p>
-    <p>Registration is needed in order to browse the webpage. Either create an 
-    account or use this one: <br>
+    "apply" for positions listed by companies. <br>
+    Completed as part of the Springboard Software Engineering Curriculum.</p>
+    <p>You'll need an account so either create one or use this one: <br>
     username: "testuser" <br>
     password: "password"</p>
     <p>Technologies used: <br>
@@ -93,6 +96,7 @@ const pages = {
     <b>Front End:<b> React.js, CSS <br>
     <b>Back End:</b> Node, Express, SQL</p>
     <p>
+    Jobly on GitHub: <a target="_blank" href="https://github.com/lemonstener/jobly-front-end">HERE</a><br>
     Deployed version: <a target="_blank" href="https://chunky-tent.surge.sh/">HERE</a>
     </p>
     <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>`,
@@ -204,14 +208,14 @@ function showAbout() {
   const aboutText = document.createElement("div");
   aboutText.innerHTML = `
   <h1>About me</h1>
-  <p>
-  Hello and thank you for visiting my website! <br> My name is Deyan, 
+  <p>My name is Deyan, 
   I am originally from Bulgaria and have lived in the United States since 2012. <br>
-  I have always had an interest in coding and computers and back in late 2020 I 
-  decided to pursue my passion full-time. I view coding as the ability to create 
+  I have always had an interest in coding and computers and back in early 2021 I 
+  decided to pursue my passion full-time by enrolling in a Software Engineering 
+  bootcamp with Springboard. I view coding as the ability to create 
   fun and useful things out of thin air and I see every problem as a puzzle to be
   cracked (I love puzzles). I love learning new technologies and am always working 
-  on improving, both as a person and as a developer. I love both Front and Back End Web Development
+  on improving myself, both as a person and as a developer. I love both Front and Back End Web Development
   and I specialize in JavaScript.
   I am currently looking for opportunities in the Greater St. Louis, Missouri area 
   as well as Illinois and remote.
@@ -340,7 +344,7 @@ function showcaseProject() {
     showcase.style.top = "1000px";
     setTimeout(function () {
       showProjects();
-    }, 100);
+    }, 200);
   });
   btn.addEventListener("mouseover", function () {
     btn.classList.add("projects-back-highlight");
