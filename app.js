@@ -208,17 +208,15 @@ function showAbout() {
   const aboutText = document.createElement("div");
   aboutText.innerHTML = `
   <h1>About me</h1>
-  <p>My name is Deyan, 
-  I am originally from Bulgaria and have lived in the United States since 2012. <br>
-  I have always had an interest in coding and computers and back in early 2021 I 
-  decided to pursue my passion full-time by enrolling in a Software Engineering 
-  bootcamp with Springboard. I view coding as the ability to create 
-  fun and useful things out of thin air and I see every problem as a puzzle to be
-  cracked (I love puzzles). I love learning new technologies and am always working 
-  on improving myself, both as a person and as a developer. I love both Front and Back End Web Development
-  and I specialize in JavaScript.
-  I am currently looking for opportunities in the Greater St. Louis, Missouri area 
-  as well as Illinois and remote.
+  <p>I am originally from Bulgaria and have lived in the United States since 2012. 
+  For as long as I can remember I've had an interest in coding and computers. 
+  In early 2021, I decided to enroll in Springboard's software engineering bootcamp. 
+  I quickly learned coding is a way to create fun and useful things out of thin air, 
+  and I see every problem as a puzzle to be solved. Whether it's front-end or back-end, 
+  I am comfortable with creating a project or jumping right in (although I do specialize in JavaScript). 
+  More importantly, I love learning new technologies and am always working on improving myself, 
+  both as a person and developer. Finally, I am currently looking for opportunities in 
+  the Greater St. Louis, Missouri area as well as Illinois or remote-work. Let's connect!
   </p>
   `;
   aboutText.className = "about-text";
