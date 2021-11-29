@@ -69,7 +69,7 @@ const pages = {
     from the left and right directions and you must eat them to increase 
     your score. Don't eat the bees!</p>
     <p>This Front End only project was built in 7 days for a hackathon hosted by Mintbean and it 
-    earned a Mintbean Star Award for "exemplary achievement in the field of web development."
+    earned a Mintbean Star Award for "exemplary achievement in the field of web development".
     Also playabale on mobile.<br>
     You can look up the results <a target="_blank" href="https://hire.mintbean.io/">HERE</a>.</p>
     <p>
