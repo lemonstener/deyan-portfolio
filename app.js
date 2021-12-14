@@ -43,8 +43,7 @@ const pages = {
     <h2>The Forge</h2>
     <p>The Forge is a single page, full stack application for the digital
     card game <b>Hearthstone</b> that allows users to create decks, edit them, 
-    favorite decks made by other users, and browse general information about the cards. <br>
-    Completed as part of the Springboard Software Engineering Curriculum.
+    favorite decks made by other users, and browse general information about the cards.
     </p>
     <p>
     Technologies used: <br>
@@ -86,8 +85,7 @@ const pages = {
     html: `
     <h2>Jobly</h2>
     <p>Jobly is a full stack mock job-searching application. Users can search and 
-    "apply" for positions listed by companies. <br>
-    Completed as part of the Springboard Software Engineering Curriculum.</p>
+    "apply" for positions listed by companies. 
     <p>You'll need an account so either create one or use this one: <br>
     username: "testuser" <br>
     password: "password"</p>
