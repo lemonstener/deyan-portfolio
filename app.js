@@ -86,7 +86,7 @@ const pages = {
     `,
   },
   frog: {
-    info: "A simple browser game I built for a hackathon",
+    info: "A browser based game. Hackathon winner ",
     img: "frog-img.png",
     title: "Frog Feast",
     html: `
