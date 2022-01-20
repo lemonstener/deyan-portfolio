@@ -35,6 +35,31 @@ const links = {
 };
 
 const pages = {
+  mixer: {
+    info: "A full stack mixology application",
+    img: "mixer-img.png",
+    title: "Mixer",
+    html: `
+    <h2>Mixer</h2>
+    <p>
+    Mixer is a full stack mixology application that allows users to browse
+    various cocktails and ingredients as well as keeping track of their favorite
+    ones. The cocktail and ingredient information comes from MixerDB, 
+    an API which I built for the purposes of this project.
+    </p>
+    <p>
+    Technologies used: <br>
+    
+    <b>Front End:</b> React.js, CSS <br>
+    <b>Back End:</b> Node.js, Express.js, PostgreSQL
+    </p>
+    <p>
+    Mixer on GitHub: <a target="_blank" href="https://github.com/lemonstener/mixer-frontend">HERE</a> <br>
+    Deployed version: <a target="_blank" href="https://mixerdb.netlify.app">HERE</a>
+    </p>
+    <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
+    `,
+  },
   hearth: {
     info: "A full stack application for the card game Hearthstone",
     img: "hearth-img.png",
@@ -44,6 +69,8 @@ const pages = {
     <p>The Forge is a single page, full stack application for the digital
     card game <b>Hearthstone</b> that allows users to create decks, edit them, 
     favorite decks made by other users, and browse general information about the cards.
+    Card information comes from my own database and API which I built for the
+    purposes of this project.
     </p>
     <p>
     Technologies used: <br>
@@ -275,6 +302,7 @@ function showProjects() {
     console.log("Nothing to delete");
   }
   const panel = document.createElement("div");
+  const mixer = document.createElement("div");
   const hearth = document.createElement("div");
   const frog = document.createElement("div");
   const job = document.createElement("div");
@@ -284,12 +312,20 @@ function showProjects() {
   panel.className = "projects-panel";
   info.className = "projects-info";
   info.style.opacity = "0";
+  info.style.backgroundColor = "black";
+  info.style.backgroundColor = "rgba(0,0,0,.9)";
+  info.style.padding = "2px";
   title.className = "projects-title";
   title.style.opacity = "0";
+  title.style.backgroundColor = "rgba(0,0,0,.9)";
+  title.style.width = "60%";
+  title.style.padding = "2px";
+  title.style.borderRadius = "10px";
+  mixer.id = "mixer";
   hearth.id = "hearth";
   frog.id = "frog";
   job.id = "jobly";
-  [hearth, frog, job].forEach((x) => {
+  [mixer, hearth, frog, job].forEach((x) => {
     x.className = "thumb";
     x.addEventListener("mouseover", toggleBackground);
     x.addEventListener("mouseout", resetBackground);
@@ -299,7 +335,7 @@ function showProjects() {
   const showcase = document.createElement("div");
   showcase.className = "projects-showcase";
 
-  panel.append(title, hearth, frog, job, info, showcase);
+  panel.append(title, mixer, hearth, frog, job, info, showcase);
   projects.append(panel);
 }
 
