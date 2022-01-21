@@ -335,7 +335,7 @@ function showProjects() {
   const showcase = document.createElement("div");
   showcase.className = "projects-showcase";
 
-  panel.append(title, mixer, hearth, frog, job, info, showcase);
+  panel.append(title, mixer, frog, hearth, job, info, showcase);
   projects.append(panel);
 }
 
