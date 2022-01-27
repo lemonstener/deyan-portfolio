@@ -325,6 +325,14 @@ div.wrapper:hover .equalizer {
   color: white;
 }
 
+#contact i {
+  transition: all 0.1s;
+}
+
+#contact i:hover {
+  transform: scale(1.15);
+}
+
 /* PROJECTS */
 
 #projects {
