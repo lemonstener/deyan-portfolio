@@ -254,7 +254,10 @@ function showAbout() {
   <b>Programming Languages:</b> Javascript, Python, SQL <br>
   <b>Front End:</b> HTML, CSS, React.js, Bootstrap, jQuery <br>
   <b>Back End:</b> Node, Express, Flask, SQLAlchemy <br>
-  <b>Other:</b> OOP, unittest, RESTful APIs
+  <b>Databases:</b> PostgreSQL, MySQL <br>
+  <b>Version Control:</b> Git, GitHub <br>
+  <b>Tools/Platforms:</b> GitHub, Heroku, Netflify, Surge <br>
+  <b>Other:</b> OOP, UI/UX, Unit test, RESTful APIs
   </p>
   `;
   aboutSkills.className = "about-skills";
@@ -282,7 +285,7 @@ function switchAbout(arg) {
   const btn = document.querySelector(`#${arg}`);
   if (arg === "me") {
     document.querySelector(".about-text").style.left = "-1000px";
-    document.querySelector(".about-skills").style.left = "0";
+    document.querySelector(".about-skills").style.left = "10%";
     btn.innerText = "ABOUT ME";
     btn.id = "skills";
   } else {

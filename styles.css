@@ -212,11 +212,23 @@ div.wrapper:hover .equalizer {
   transition: left 0.3s;
 }
 
+.about-skills b {
+  font-size: 1.05em;
+  color: gold;
+}
+
+.about-skills h2 {
+  color: white;
+  text-align: center;
+}
+
 .about-skills {
-  width: 100%;
+  width: 80%;
   position: absolute;
   left: 1000px;
   transition: left 0.3s;
+  text-align: left;
+  color: white;
 }
 
 .about-btn {
