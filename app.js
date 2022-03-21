@@ -238,11 +238,12 @@ function showAbout() {
   In early 2021, I decided to pursue my passion full time and enroll in 
   Springboard's software engineering bootcamp. 
   I quickly learned coding is a way to create fun and useful things out of thin air, 
-  and I see every problem as a puzzle to be solved. Whether it's front-end or back-end, 
+  and I see every problem as a puzzle to be solved. Whether it's Front end or Back end, 
   I am comfortable with creating a project or jumping right in (although I do specialize in JavaScript). 
   More importantly, I love learning new technologies and am always working on improving myself, 
-  both as a person and developer. Finally, I am currently looking for opportunities in 
-  the Greater St. Louis, Missouri area as well as Illinois or remote-work. Let's connect!
+  both as a person and developer. Currently, I am working on a number of websites professionally
+  using Webflow. But, I am still interested in opportunities in the Greater St.Louis Area as well as 
+  Illinois. Let's connect!
   </p>
   `;
   aboutText.className = "about-text";
@@ -251,13 +252,13 @@ function showAbout() {
   aboutSkills.innerHTML = `
   <h2>Skills</h2>
   <p>
-  <b>Programming Languages:</b> Javascript, Python, SQL <br>
-  <b>Front End:</b> HTML, CSS, React.js, Bootstrap, jQuery <br>
-  <b>Back End:</b> Node, Express, Flask, SQLAlchemy <br>
+  <b>Programming Languages:</b> Javascript, Python, SQL, Java <br>
+  <b>Front End:</b> React.js, HTML, CSS, Bootstrap, Webflow, jQuery <br>
+  <b>Back End:</b> Node.js, Express.js, Flask, SQLAlchemy <br>
   <b>Databases:</b> PostgreSQL, MySQL <br>
-  <b>Version Control:</b> Git, GitHub <br>
-  <b>Tools/Platforms:</b> GitHub, Heroku, Netflify, Surge <br>
-  <b>Other:</b> OOP, UI/UX, Unit test, RESTful APIs
+  <b>Version Control:</b> Git <br>
+  <b>Tools/Platforms:</b> GitHub, Heroku, Netlify, Surge, Webflow <br>
+  <b>Other:</b> OOP, UI/UX, Unit test, RESTful APIs, DSA
   </p>
   `;
   aboutSkills.className = "about-skills";
