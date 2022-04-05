@@ -35,6 +35,29 @@ const links = {
 };
 
 const pages = {
+  thai: {
+    info: "Thai Sport Bodyworks™ - official website",
+    img: "thai-img.jpeg",
+    title: "Thai Sport Bodyworks™",
+    html: `
+    <h2>Thai Sport Bodyworks Official Website</h2>
+    <p>
+    Thai Sport Bodyworks™ is San Diego's premier massage/sports therapy center. 
+    I am currently hard at work on the complete UI overhaul of their official website which 
+    serves 18,000+ active customers. In this role I do pretty much everything - bringing concepts 
+    to life from design to implementation, refactoring pre-exisitng code, ensuring mobile 
+    responsiveness and cross-browser compatibility, as well as handle blog functionality.
+    </p>
+    <p>
+    Technologies used: <br>
+    Webflow, CSS, JavaScript <br>
+    </p>
+    <p>
+    Deployed version (work in progress): <a target="_blank" href="https://thai-sport-main-website.webflow.io/">HERE</a>
+    </p>
+    <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
+    `,
+  },
   mixer: {
     info: "A full stack mixology application",
     img: "mixer-img.png",
@@ -86,7 +109,7 @@ const pages = {
     `,
   },
   frog: {
-    info: "A browser based game. Hackathon winner ",
+    info: "A browser based game, hackathon winner ",
     img: "frog-img.png",
     title: "Frog Feast",
     html: `
@@ -306,6 +329,7 @@ function showProjects() {
     console.log("Nothing to delete");
   }
   const panel = document.createElement("div");
+  const thai = document.createElement("div");
   const mixer = document.createElement("div");
   const hearth = document.createElement("div");
   const frog = document.createElement("div");
@@ -325,11 +349,12 @@ function showProjects() {
   title.style.width = "60%";
   title.style.padding = "2px";
   title.style.borderRadius = "10px";
+  thai.id = "thai";
   mixer.id = "mixer";
   hearth.id = "hearth";
   frog.id = "frog";
   job.id = "jobly";
-  [mixer, hearth, frog, job].forEach((x) => {
+  [thai, mixer, hearth, frog, job].forEach((x) => {
     x.className = "thumb";
     x.addEventListener("mouseover", toggleBackground);
     x.addEventListener("mouseout", resetBackground);
@@ -339,7 +364,7 @@ function showProjects() {
   const showcase = document.createElement("div");
   showcase.className = "projects-showcase";
 
-  panel.append(title, mixer, frog, hearth, job, info, showcase);
+  panel.append(title, thai, mixer, frog, hearth, job, info, showcase);
   projects.append(panel);
 }
 
