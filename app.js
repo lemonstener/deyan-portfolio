@@ -40,20 +40,18 @@ const pages = {
     img: "thai-img.jpeg",
     title: "Thai Sport Bodyworks™",
     html: `
-    <h2>Thai Sport Bodyworks Official Website</h2>
+    <h2>Thai Sport Bodyworks™ Official Website</h2>
+    <b style='color:gold;'>Webflow, HTML, CSS, JavaScript</b> <br>
     <p>
     Thai Sport Bodyworks™ is San Diego's premier massage/sports therapy center. 
     I am currently hard at work on the complete UI overhaul of their official website which 
     serves 18,000+ active customers. In this role I do pretty much everything - bringing concepts 
     to life from design to implementation, refactoring pre-exisitng code, ensuring mobile 
-    responsiveness and cross-browser compatibility, as well as handle blog functionality.
+    responsiveness and cross-browser compatibility, handling blog functionality 
+    through a Content Management System, as well as improving Search Engine Optimization.
     </p>
     <p>
-    Technologies used: <br>
-    Webflow, CSS, JavaScript <br>
-    </p>
-    <p>
-    Deployed version (work in progress): <a target="_blank" href="https://thai-sport-main-website.webflow.io/">HERE</a>
+    Deployed version (work in progress): <a style='color:gold;' target="_blank" href="https://thai-sport-main-website.webflow.io/">HERE</a>
     </p>
     <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
     `,
@@ -64,46 +62,38 @@ const pages = {
     title: "Mixer",
     html: `
     <h2>Mixer</h2>
+    <b style='color:gold;'>React.js, Node.js, Express.js, PostgreSQL, Jest</b>
     <p>
-    Mixer is a full stack mixology application that allows users to browse
-    various cocktails and ingredients as well as keeping track of their favorite
-    ones. The cocktail and ingredient information comes from MixerDB, 
-    an API which I built for the purposes of this project.
+    Mixer is a Full Stack cocktail mixology application that allows users to browse
+    various cocktails and ingredients as well as adding cocktails to a favorite page. 
     </p>
+    <p>Cocktail and ingredient data comes from MixerDB, 
+    an API which I built for the purposes of this project. 
+    Database features over 1000 cocktails and ingredients.</p>
     <p>
-    Technologies used: <br>
-    
-    <b>Front End:</b> React.js, CSS <br>
-    <b>Back End:</b> Node.js, Express.js, PostgreSQL
-    </p>
-    <p>
-    Mixer on GitHub: <a target="_blank" href="https://github.com/lemonstener/mixer-frontend">HERE</a> <br>
-    Deployed version: <a target="_blank" href="https://mixerdb.netlify.app">HERE</a>
+    Mixer on GitHub: <a style='color:gold;' target="_blank" href="https://github.com/lemonstener/mixer-frontend">HERE</a> <br>
+    Deployed version: <a style='color:gold;' target="_blank" href="https://mixerdb.netlify.app">HERE</a>
     </p>
     <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
     `,
   },
   hearth: {
-    info: "A full stack application for the card game Hearthstone",
+    info: "A full-stack, deck-building application for the digital card game Hearthstone",
     img: "hearth-img.png",
     title: "The Forge",
     html: `
     <h2>The Forge</h2>
-    <p>The Forge is a single page, full stack application for the digital
-    card game <b>Hearthstone</b> that allows users to create decks, edit them, 
-    favorite decks made by other users, and browse general information about the cards.
-    Card information comes from my own database and API which I built for the
-    purposes of this project.
-    </p>
+    <b style='color:gold;'>JavaScript, Python 3, Flask, SQLAlchemy</b>
     <p>
-    Technologies used: <br>
-    
-    <b>Front End:</b> HTML, CSS, JavaScript, Axios <br>
-    <b>Back End:</b> Python 3.7.7, Flask, SQLAlchemy
+    The Forge is a Single Page, Full Stack deck building application for the digital card game 
+    Hearthstone. Users can create decks, edit them, favorite decks made by other users, 
+    and browse general information about the cards.
     </p>
+    <p>Card data comes from my own database, which I built for the purposes of this project 
+    and it features over 2000 cards.</p>
     <p>
-    The Forge on GitHub: <a target="_blank" href="https://github.com/lemonstener/hearthstone-forge">HERE</a> <br>
-    Deployed version: <a target="_blank" href="https://hearthstone-forge.herokuapp.com/">HERE</a>
+    The Forge on GitHub: <a style='color:gold;' target="_blank" href="https://github.com/lemonstener/hearthstone-forge">HERE</a> <br>
+    Deployed version: <a style='color:gold;' target="_blank" href="https://hearthstone-forge.herokuapp.com/">HERE</a>
     </p>
     <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
     `,
@@ -114,16 +104,16 @@ const pages = {
     title: "Frog Feast",
     html: `
     <h2>Frog Feast</h2>
-    <p>Frog Feast is a simple, browser based game. You are a frog, bugs come
-    from the left and right directions and you must eat them to increase 
-    your score. Don't eat the bees!</p>
+    <b style='color:gold;'>JavaScript, HTML, CSS</b>
+    <p>Frog Feast is a browser based-game where you are a frog, eating bugs for a high score. 
+    Press the left and right arrow on the keyboard (or tap the left or right side of the screen on mobile) 
+    to extend your tongue at the desired direction and eat those delicious bugs. Don't eat the bees!</p>
     <p>This Front End only project was built in 7 days for a hackathon hosted by Mintbean and it 
     earned a Mintbean Star Award for "exemplary achievement in the field of web development".
-    Also playabale on mobile.<br>
-    You can look up the results <a target="_blank" href="https://hire.mintbean.io/">HERE</a>.</p>
     <p>
-    Frog Feast on GitHub: <a target="_blank" href="https://github.com/lemonstener/frog-feast">HERE</a> <br>
-    Deployed version: <a target="_blank" href="https://lemonstener.github.io/frog-feast/">HERE</a>
+    Hackathon results <a target="_blank" style='color:gold;' href="https://hire.mintbean.io/">HERE</a> <br>
+    Frog Feast on GitHub: <a target="_blank" style='color:gold;' href="https://github.com/lemonstener/frog-feast">HERE</a> <br>
+    Deployed version: <a target="_blank" style='color:gold;' href="https://lemonstener.github.io/frog-feast/">HERE</a>
     </p>
     <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>
     `,
@@ -134,18 +124,15 @@ const pages = {
     title: "Jobly",
     html: `
     <h2>Jobly</h2>
+    <b style='color:gold;'>React.js, Node.js, Express.js, PostgreSQL</b>
     <p>Jobly is a full stack mock job-searching application. Users can search and 
     "apply" for positions listed by companies. 
     <p>You'll need an account so either create one or use this one: <br>
     username: "testuser" <br>
     password: "password"</p>
-    <p>Technologies used: <br>
-    
-    <b>Front End:<b> React.js, CSS <br>
-    <b>Back End:</b> Node, Express, SQL</p>
-    <p>
-    Jobly on GitHub: <a target="_blank" href="https://github.com/lemonstener/jobly-front-end">HERE</a><br>
-    Deployed version: <a target="_blank" href="https://chunky-tent.surge.sh/">HERE</a>
+
+    Jobly on GitHub: <a target="_blank" style='color:gold;' href="https://github.com/lemonstener/jobly-front-end">HERE</a><br>
+    Deployed version: <a target="_blank" style='color:gold;' href="https://chunky-tent.surge.sh/">HERE</a>
     </p>
     <div class="projects-back"><i class="fas fa-angle-double-down"></i></div>`,
   },
@@ -158,7 +145,7 @@ function setInitial() {
   about.innerHTML = '<span>ABOUT</span><i class="fas fa-user-alt"></i>';
   projects.innerHTML = '<i class="fas fa-folder"></i><span>PROJECTS</span>';
   projects.style.backgroundImage = "none";
-  contact.innerHTML = '<i class="fas fa-phone"></i><span>CONTACT</span>';
+  contact.innerHTML = '<i class="fas fa-phone"></i><span>CONTACT & CV</span>';
   quarters.forEach((q) => {
     q.addEventListener("click", toggle, true);
   });
@@ -256,17 +243,16 @@ function showAbout() {
   const aboutText = document.createElement("div");
   aboutText.innerHTML = `
   <h2>About me</h2>
-  <p>I am originally from Bulgaria and have lived in the United States since 2012. 
-  For as long as I can remember I've had an interest in coding and computers. 
-  In early 2021, I decided to pursue my passion full time and enroll in 
-  Springboard's software engineering bootcamp. 
-  I quickly learned coding is a way to create fun and useful things out of thin air, 
-  and I see every problem as a puzzle to be solved. Whether it's Front end or Back end, 
-  I am comfortable with creating a project or jumping right in (although I do specialize in JavaScript). 
-  More importantly, I love learning new technologies and am always working on improving myself, 
-  both as a person and developer. Currently, I am working on a number of websites professionally
-  using Webflow. But, I am still interested in opportunities in the Greater St.Louis Area as well as 
-  Illinois. Let's connect!
+  <p>
+  Hello World! My name is Deyan and I am Full-stack Software Engineer who started his journey into 
+  the field back in late 2020. Since then I have gained invaluable experience from professional work, 
+  a coding bootcamp, online courses, hackathons, and rigorous self-teaching. <br>
+  Tackling complex problems and being able to express your creative side is what always drew me 
+  to this industry ever since I was a kid. <br>
+  Currently, I am working part-time as a Web Developer for Thai Sport Group Inc., but I am still on the 
+  lookout for that first full-time position as either a Full-stack, Front-end, or Back-end engineer. <br>
+  So feel free to browse the projects I have listed here, as well as my GitHub, and if you like what you see 
+  then don't hesitate to reach out to me! 
   </p>
   `;
   aboutText.className = "about-text";
@@ -275,13 +261,10 @@ function showAbout() {
   aboutSkills.innerHTML = `
   <h2>Skills</h2>
   <p>
-  <b>Programming Languages:</b> Javascript, Python, SQL, Java <br>
-  <b>Front End:</b> React.js, HTML, CSS, Bootstrap, Webflow, jQuery <br>
-  <b>Back End:</b> Node.js, Express.js, Flask, SQLAlchemy <br>
-  <b>Databases:</b> PostgreSQL, MySQL <br>
-  <b>Version Control:</b> Git <br>
-  <b>Tools/Platforms:</b> GitHub, Heroku, Netlify, Surge, Webflow <br>
-  <b>Other:</b> OOP, UI/UX, Unit test, RESTful APIs, DSA
+  <b>Languages:</b> JavaScript, HTML, CSS, SQL, Python, Java <br>
+  <b>Frameworks:</b> React.js, Node.js, Express.js, Flask, SQLAlchemy, Bootstrap, jQuery <br>
+  <b>Tools:</b> Git, GitHub, PostgreSQL, MySQL, Webflow <br>
+  <b>Other:</b> OOP, MVC, RESTful APIs, Unit Testing <br>
   </p>
   `;
   aboutSkills.className = "about-skills";
@@ -426,6 +409,7 @@ function showContact() {
   <a target="_blank" href="https://www.linkedin.com/in/deyan-vasilev/"><i class="fab fa-linkedin linkedin"></i></a>
   <a target="_blank" href="https://github.com/lemonstener"><i class="fab fa-github github"></i></a>
   <a target="_blank" href="mailto: deyanvasilev7@gmail.com"><i class="fas fa-envelope mail"></i></a>
+  <a target="_blank" href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view?usp=sharing"><i class="fa-solid fa-file"></i></a>
   `;
 
   contact.append(panel);
