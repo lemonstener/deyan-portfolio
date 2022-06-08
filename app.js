@@ -36,7 +36,7 @@ const links = {
 
 const pages = {
   thai: {
-    info: "Thai Sport Bodyworks™ - official website",
+    info: "Official website",
     img: "thai-img.jpeg",
     title: "Thai Sport Bodyworks™",
     html: `
@@ -57,14 +57,14 @@ const pages = {
     `,
   },
   mixer: {
-    info: "A full stack mixology application",
+    info: "A single page, Full-stack cocktail mixology application",
     img: "mixer-img.png",
     title: "Mixer",
     html: `
     <h2>Mixer</h2>
     <b style='color:gold;'>React.js, Node.js, Express.js, PostgreSQL, Jest</b>
     <p>
-    Mixer is a Full Stack cocktail mixology application that allows users to browse
+    Mixer is a Full-stack cocktail mixology application that allows users to browse
     various cocktails and ingredients as well as adding cocktails to a favorite page. 
     </p>
     <p>Cocktail and ingredient data comes from MixerDB, 
@@ -78,16 +78,20 @@ const pages = {
     `,
   },
   hearth: {
-    info: "A full-stack, deck-building application for the digital card game Hearthstone",
+    info: "A Full-stack, deck-building application for the digital card game Hearthstone",
     img: "hearth-img.png",
     title: "The Forge",
     html: `
     <h2>The Forge</h2>
     <b style='color:gold;'>JavaScript, Python 3, Flask, SQLAlchemy</b>
     <p>
-    The Forge is a Single Page, Full Stack deck building application for the digital card game 
+    The Forge is a Full-stack, deck-building application for the digital card game 
     Hearthstone. Users can create decks, edit them, favorite decks made by other users, 
     and browse general information about the cards.
+    </p>
+    <p>
+    For this project I decided to give myself an additional challenge by attempting to make this into 
+    a single page application using only vanilla JavaScript (lol).
     </p>
     <p>Card data comes from my own database, which I built for the purposes of this project 
     and it features over 2000 cards.</p>
@@ -99,17 +103,17 @@ const pages = {
     `,
   },
   frog: {
-    info: "A browser based game, hackathon winner ",
+    info: "A browser-based game built in 7 days, hackathon winner ",
     img: "frog-img.png",
     title: "Frog Feast",
     html: `
     <h2>Frog Feast</h2>
     <b style='color:gold;'>JavaScript, HTML, CSS</b>
-    <p>Frog Feast is a browser based-game where you are a frog, eating bugs for a high score. 
+    <p>Frog Feast is a browser-based game where you are a frog, eating bugs for a high score. 
     Press the left and right arrow on the keyboard (or tap the left or right side of the screen on mobile) 
     to extend your tongue at the desired direction and eat those delicious bugs. Don't eat the bees!</p>
-    <p>This Front End only project was built in 7 days for a hackathon hosted by Mintbean and it 
-    earned a Mintbean Star Award for "exemplary achievement in the field of web development".
+    <p>This Front-end only project was built in 7 days for a hackathon hosted by Mintbean and it 
+    earned the Mintbean Star Award for "exemplary achievement in the field of web development".
     <p>
     Hackathon results <a target="_blank" style='color:gold;' href="https://hire.mintbean.io/">HERE</a> <br>
     Frog Feast on GitHub: <a target="_blank" style='color:gold;' href="https://github.com/lemonstener/frog-feast">HERE</a> <br>
@@ -119,14 +123,14 @@ const pages = {
     `,
   },
   jobly: {
-    info: "A full stack job searching application",
+    info: "A single page, Full-stack, job searching application",
     img: "jobly-img.png",
     title: "Jobly",
     html: `
     <h2>Jobly</h2>
     <b style='color:gold;'>React.js, Node.js, Express.js, PostgreSQL</b>
-    <p>Jobly is a full stack mock job-searching application. Users can search and 
-    "apply" for positions listed by companies. 
+    <p>Jobly is a Full-stack, mock job-searching application where users can search and 
+    "apply" for positions listed by fictional companies. 
     <p>You'll need an account so either create one or use this one: <br>
     username: "testuser" <br>
     password: "password"</p>
