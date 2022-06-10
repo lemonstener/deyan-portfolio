@@ -233,7 +233,7 @@ function showHome() {
   const h1 = document.createElement("h1");
   const p = document.createElement("span");
   h1.innerText = "Deyan Vasilev";
-  p.innerHTML = "Software Engineer";
+  p.innerHTML = "Software Engineer based in the St. Louis Metropolitan area";
 
   info.append(h1, p);
   panel.append(info);
@@ -249,13 +249,14 @@ function showAbout() {
   <h2>About me</h2>
   <p>
   Hello World! My name is Deyan and I am Full-stack Software Engineer who started his journey into 
-  the field back in late 2020. Since then I have gained invaluable experience from professional work, 
+  the field back in 2020. Since then I have gained invaluable experience from professional work, 
   a coding bootcamp, online courses, hackathons, and rigorous self-teaching. <br>
   Tackling complex problems and being able to express your creative side is what always drew me 
   to this industry ever since I was a kid. <br>
-  Currently, I am working part-time as a Web Developer for Thai Sport Group Inc., but I am still on the 
-  lookout for that first full-time position as either a Full-stack, Front-end, or Back-end engineer. <br>
-  So feel free to browse the projects I have listed here, as well as my GitHub, and if you like what you see 
+  Currently, I am working part-time as a Web Developer, but I am still on the 
+  lookout for that first full-time position as either a Full-stack, Front-end, or Back-end engineer. 
+  I am located in the St. Louis Metropolitan area, but I am also open to remote work, as well as relocating. <br>
+  Check out some of the projects I've worked on, and if you like what you see, 
   then don't hesitate to reach out to me! 
   </p>
   `;
@@ -433,6 +434,6 @@ function toggleMusic() {
   }
 }
 
-equalizer.addEventListener("click", toggleMusic);
+// equalizer.addEventListener("click", toggleMusic);
 
 setInitial();
