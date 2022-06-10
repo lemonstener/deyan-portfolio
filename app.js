@@ -250,7 +250,7 @@ function showAbout() {
   <p>
   Hello World! My name is Deyan and I am Full-stack Software Engineer who started his journey into 
   the field back in 2020. Since then I have gained invaluable experience from professional work, 
-  a coding bootcamp, online courses, hackathons, and rigorous self-teaching. <br>
+  a coding bootcamp, online courses, hackathons, and continuous self-learning. <br>
   Tackling complex problems and being able to express your creative side is what always drew me 
   to this industry ever since I was a kid. <br>
   Currently, I am working part-time as a Web Developer, but I am still on the 
