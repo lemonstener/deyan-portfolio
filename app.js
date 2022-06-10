@@ -275,7 +275,7 @@ function showAbout() {
   aboutSkills.className = "about-skills";
 
   const btn = document.createElement("div");
-  btn.innerText = "SKILLS";
+  btn.innerText = "SKILLS >>>";
   btn.className = "about-btn";
   btn.id = "me";
   about.append(aboutText, btn, aboutSkills);
@@ -298,12 +298,12 @@ function switchAbout(arg) {
   if (arg === "me") {
     document.querySelector(".about-text").style.left = "-1000px";
     document.querySelector(".about-skills").style.left = "10%";
-    btn.innerText = "ABOUT ME";
+    btn.innerText = "<<< ABOUT ME";
     btn.id = "skills";
   } else {
     document.querySelector(".about-text").style.left = "0";
     document.querySelector(".about-skills").style.left = "1000px";
-    btn.innerText = "SKILLS";
+    btn.innerText = "SKILLS >>>";
     btn.id = "me";
   }
 }
