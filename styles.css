@@ -57,18 +57,18 @@ button {
     color: white;
 }
 
-.btn-source:hover {
+    .btn-source:hover {
     box-shadow: inset 150px 0 0 black;
     color: white;
 }
 
-.btn-live {
+    .btn-live {
     border: 2px solid green;
     color: green;
     box-shadow: inset 0px 0px 0px green;
 }
 
-.btn-source {
+    .btn-source {
     border: 2px solid black;
     color: black;
     box-shadow: inset 0px 0px 0px black;
@@ -182,7 +182,7 @@ ul li {
 }
 
 @media only screen and (min-width: 991.1px) {
-    ul li:hover {
+    header ul li:hover {
         transform: scale(1.1);
         transition: 0.3s;
     }
@@ -206,13 +206,21 @@ ul li {
     color: white;
 }
 
+@media only screen and (max-height: 450px) {
+    #hero {
+        height: 100vh;
+    }
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .hero h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 /* About section */
@@ -285,6 +293,17 @@ ul li {
     background-color: rgba(230, 230, 230,.4);
 }
 
+#projects ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects ul li {
+    background-color: transparent;
+}
+
 .row {
     width: 1078px;
     margin: 20px;
@@ -332,6 +351,7 @@ ul li {
 
 @media only screen and (max-width: 1150px) {
     .row {
+        margin: 10px auto;
         width: 80%;
         flex-direction: column-reverse;
         box-shadow: none;
@@ -369,6 +389,7 @@ ul li {
     font-size: 2rem;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 .contact-icons {
