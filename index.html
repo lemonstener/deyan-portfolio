@@ -39,23 +39,23 @@
           <ul class="mobile-menu">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view">Download CV</a></li>
+            <li><a target="_blank" href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view">Download CV</a></li>
             <li><a href="#projects" >Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </header>
+    </header>
 
     <!-- Hero section -->
 
-    <section id="hero" class="hero">
+    <section id="hero">
             <h1>Deyan Vasilev</h1>
             <h2>Software Engineer</h2> 
     </section>
 
     <!-- About section & Download CV -->
 
-    <section id="about" class="about">
+    <section id="about">
         <div class="section-header">
             <h2>About Me</h2>
             <p>I am a Full stack Software Engineer based in the St. Louis Metropolitan area</p>
@@ -81,7 +81,6 @@
                 </p> <br>
                 <a aria-label="Download Resume" target="_blank" href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view"><button class="btn-live">RESUME</button></a> 
             </div>
-            <div class="about-highlight">Tools and Languages</div>
             <div class="about-skills" aria-label="JavaScipt, Python, PostgreSQL, MySQL, React.js, Node.js, Express.js, Flask, Bootstrap, jQuery, Webflow, Git, GitHub, Jest">
                 <i aria-hidden="true" class="devicon-javascript-plain colored"></i>
                 <i aria-hidden="true" class="devicon-python-plain-wordmark colored"></i>
@@ -130,7 +129,7 @@
                         </p>
                         <p class="project-links">
                         <a target="_blank" href="https://thai-sport-main-website.webflow.io/"><button class="btn-live">LIVE</button></a>
-                    </p>
+                        </p>
                 </div>
                 <div class="column2">
                     <img alt="Screenshot of Thai Sport Bodyworks™ website" src="./images/thai.png" />
@@ -257,156 +256,25 @@
             </li>
             
         </ul>
-        <!-- <div class="row">
-            <div class="column1">
-                <h3 class="project-title">
-                    Thai Sport Bodyworks™
-                </h3>
-                <p class="icon-stack" aria-label="Webflow, JavaScript">
-                    <i aria-hidden="true" class="devicon-webflow-original colored"></i>
-                    <i aria-hidden="true" style="background-color: black;" class="devicon-javascript-plain colored"></i>
-                </p>
-                <p class="project-description">
-                    Thai Sport Bodyworks™ is San Diego's premier massage/sports therapy center. 
-                    I am currently hard at work on the complete UI overhaul of their official website which serves 18,000+ active customers. 
-                    In this role I do pretty much everything - bringing concepts to life from design to implementation, 
-                    refactoring pre-exisitng code, ensuring mobile responsiveness and cross-browser compatibility, 
-                    handling blog functionality through a Content Management System, as well as improving Search Engine Optimization. <br> <br>
-                    <span class="strong">Work in progress</span>
-                </p>
-                <p class="project-links">
-                    <a target="_blank" href="https://thai-sport-main-website.webflow.io/"><button class="btn-live">LIVE</button></a>
-                </p>
-            </div>
-            <div class="column2">
-                <img alt="Screenshot of Thai Sport Bodyworks™ website" src="./images/thai.png" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="column1">
-                <h3 class="project-title">
-                    Frog Feast
-                </h3>
-                <p class="icon-stack" aria-label="JavaScript">
-                    <i aria-hidden="true" style="background-color: black;" class="devicon-javascript-plain colored"></i>
-                </p>
-                <p class="project-description">
-                    Frog Feast is a browser-based game where you are a frog, eating bugs for a high score. 
-                    Press the left and right arrow on the keyboard (or tap the left or right side of the screen on mobile) 
-                    to extend your tongue at the desired direction and eat those delicious bugs. Don't eat the bees! <br><br>
-                    This Front-end only project was built in 7 days for a hackathon hosted by Mintbean and it earned 
-                    the Mintbean Star Award for "exemplary achievement in the field of web development".
-                </p>
-                <p class="project-links">
-                    <a target="_blank" href="https://lemonstener.github.io/frog-feast/"><button class="btn-live">LIVE</button></a>
-                    <a target="_blank" href="https://github.com/lemonstener/frog-feast"><button class="btn-source">GitHub</button></a>
-                </p>
-            </div>
-            <div class="column2">
-                <img alt="Screenshot of frog" src="./images/frog.png" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="column1">
-                <h3 class="project-title">
-                    Mixer
-                </h3>
-                <p class="icon-stack" aria-label="React.js, Node.js, Express.js, PostgreSQL, Jest">
-                    <i aria-hidden="true" class="devicon-react-original colored"></i>
-                    <i aria-hidden="true" class="devicon-nodejs-plain colored"></i>
-                    <i aria-hidden="true" class="devicon-express-original colored"></i>
-                    <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                    <i aria-hidden="true" class="devicon-jest-plain colored"></i>
-                </p>
-                <p class="project-description">
-                    Mixer is a Full-stack cocktail mixology application that allows users to
-                    browse various cocktails and ingredients as well as adding cocktails to a 
-                    favorite page. <br>
-                    Cocktail and ingredient data comes from MixerDB, an API which I built for 
-                    the purposes of this project. Database features over 1000 cocktails and ingredients.
-                </p>
-                <p class="project-links">
-                    <a target="_blank" href="https://mixerdb.netlify.app/"><button class="btn-live">LIVE</button></a> 
-                    <a target="_blank" href="https://github.com/lemonstener/mixer-frontend"><button class="btn-source">GitHub</button></a>
-                </p>
-            </div>
-            <div class="column2">
-                <img alt="Screenshot of cocktails" src="./images/mixer.png" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="column1">
-                <h3 class="project-title">
-                    The Forge
-                </h3>
-                <p class="icon-stack" aria-label="Python, JavaScript, Flask, PostgreSQL">
-                    <i aria-hidden="true" style="background-color: black;" class="devicon-javascript-plain colored"></i>
-                    <i aria-hidden="true" style="background-color: blue;" class="devicon-python-plain-wordmark colored"></i>
-                    <i aria-hidden="true" class="devicon-flask-original colored"></i>
-                    <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                </p>
-                <p class="project-description">
-                    The Forge is a Full-stack, deck-building application for the digital card game Hearthstone. 
-                    Users can create decks, edit them, favorite decks made by other users, and browse general information about the cards.
-                    Card data comes from my own database, which I built for the purposes of this project and it features over 2000 cards.
-                </p>
-                <p><span class="strong">Note: </span>this application is hosted on Heroku, so it may take a few extra seconds to load.</p>
-                <p class="project-links">
-                    <a target="_blank" href="https://hearthstone-forge.herokuapp.com/"><button class="btn-live">LIVE</button></a>
-                    <a target="_blank" href="https://github.com/lemonstener/hearthstone-forge"><button class="btn-source">GitHub</button></a>
-                </p>
-            </div>
-            <div class="column2">
-                <img alt="Screenshot of The Forge" src="./images/hearthstone.png" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="column1">
-                <h3 class="project-title">
-                    Jobly
-                </h3>
-                <p class="icon-stack" aria-label="React.js, Node.js, Express.js, PostgreSQL, Jest">
-                    <i aria-hidden="true" class="devicon-react-original colored"></i>
-                    <i aria-hidden="true" class="devicon-nodejs-plain colored"></i>
-                    <i aria-hidden="true" class="devicon-express-original colored"></i>
-                    <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                    <i aria-hidden="true" class="devicon-jest-plain colored"></i>
-                </p>
-                <p class="project-description">
-                    Jobly is a Full-stack, mock job-searching application where users can search and "apply" 
-                    for positions listed by fictional companies. <br> <br>
-                    You will need an account, so either create one or use this one: <br><br>
-                    username: "testuser" <br>
-                    password: "password"
-                </p>
-                <p class="project-links">
-                    <a target="_blank" href="https://chunky-tent.surge.sh/"><button class="btn-live">LIVE</button></a>
-                     <a target="_blank" href="https://github.com/lemonstener/jobly-front-end"><button class="btn-source">GitHub</button></a>
-                </p>
-            </div>
-            <div class="column2">
-                <img alt="Screenshot of Jobly" src="./images/jobly.png" />
-            </div>
-        </div> -->
     </section>
 
     <!-- Contact & Footer -->
 
-<footer>
-    <section id="contact">
-        <div class="contact-details">
-            <h3 class="contact-heading">Let's get in touch!</h3>
-            <div class="contact-icons">
-                <a aria-label="Deyan Vasilev on LinkedIn" target="_blank" href="https://www.linkedin.com/in/deyan-vasilev/"><i class="fab fa-linkedin linkedin"></i></a>
-                <a aria-label="Deyan Vasilev on GitHub" target="_blank" href="https://github.com/lemonstener"><i class="fab fa-github github"></i></a>
-                <a aria-label="Send an email to Deyan Vasilev" target="_blank" href="mailto: deyanvasilev7@gmail.com"><i class="fas fa-envelope mail"></i></a>
-                <a aria-label="Download Resume" target="_blank" href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view?usp=sharing"><i class="fa-solid fa-file"></i></a>
+    <footer>
+        <section id="contact">
+            <div class="contact-details">
+                <h3 class="contact-heading">Let's get in touch!</h3>
+                <div class="contact-icons">
+                    <a aria-label="Deyan Vasilev on LinkedIn" target="_blank" href="https://www.linkedin.com/in/deyan-vasilev/"><i class="fab fa-linkedin linkedin"></i></a>
+                    <a aria-label="Deyan Vasilev on GitHub" target="_blank" href="https://github.com/lemonstener"><i class="fab fa-github github"></i></a>
+                    <a aria-label="Send an email to Deyan Vasilev" target="_blank" href="mailto: deyanvasilev7@gmail.com"><i class="fas fa-envelope mail"></i></a>
+                    <a aria-label="Download Resume" target="_blank" href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view?usp=sharing"><i class="fa-solid fa-file"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
-</footer>
+        </section>
+    </footer>
 
-    <script src="app.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
