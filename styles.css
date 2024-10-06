@@ -394,7 +394,6 @@ header ul li {
 
 @media only screen and (max-width: 1150px) {
     .project {
-        background-color: transparent;
         width: 80%;
     }
 
