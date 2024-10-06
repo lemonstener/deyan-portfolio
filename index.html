@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" as="image" href="./images/stock-background.jpg">
+    <link rel="preload" as="image" href="./images/orders.png">
     <link rel="preload" as="image" href="./images/thai.png">
     <link rel="preload" as="image" href="./images/frog.png">
     <link rel="preload" as="image" href="./images/mixer.png">
@@ -64,44 +64,27 @@
     <section id="about">
         <div class="section-header">
             <h2>About Me</h2>
-            <p>I am a Full stack Software Engineer based in the St. Louis Metropolitan area</p>
+            <p>I am a T-shaped, Front-end Software Engineer based in the St. Louis Metropolitan area</p>
         </div>
         <div class="about-container">
             <div class="about-bio">
                 <p>
-                Hello World! My name is Deyan and I am Full-stack Software Engineer, originally from Bulgaria.
-                I enjoy all layers of the process and whether it's building a Front end with 
-                React.js or just vanilla HTML and CSS, working with APIs with Flask or Express.js, or creating and 
-                maintaning relational databases, I enjoy every second of what I do. 
-                Tackling complex problems and being able to express my creative side is what always drew me 
-                to this industry ever since I was a kid. <br> <br>
+                Hello World! My name is Deyan and I am Front-end Software Engineer. I am originnally from Bulgaria and have lived in the United States since 2012.<br><br>
+                I specialize in developing web applications with React, but my skillset extends well beyond that. I am also more than capable of producing
+                quality back-end work when needed, as demonstrated by my work experience and personal projects. At my previous job I was able to successfully step in 
+                as full-stack developer on multiple occasions. My flexibility allowed my team to reduce bottlenecks and ship features faster. <br><br>
+                Throughout my career I have always maintained a "Never get comfortable, always challenge yourself" mentality, which has done wonders 
+                for my professional development. I enjoy tackling complex problems, crafting innovative solutions, and challenging the conventions 
+                of our industry. <br><br>
                 Outside of Software Engineering I have close to 10 years of experience in the restaurant industry 
                 where I learned and applied crucial concepts such as teamwork, customer service, and 
                 performing under intense pressure. <br> <br>
-                Currently I work part time as a Web Developer for a company remotely, but I am still on the lookout for that first 
-                full time position in either a Front end, Back end, or Full stack capacity. I am located in the 
-                St. Louis Metropolitan area, but I am also open to remote work, as well as relocating. <br> <br>
-                So if you like what you see, feel free to download my resume or reach out to me directly! I am looking 
+                I am currently looking for my next position within the St. Louis Metropolitan area, as well as remotely. <br> <br>
+                If you like what you see, feel free to download my resume or reach out to me directly! I am looking 
                 forward to hearing from you!
                 
                 </p> <br>
                 <a aria-label="Download Resume" target="_blank" href="https://drive.google.com/file/d/1iCi3cP-gXztstduqIQFq4wJ1ZBPEuavc/view"><button class="btn-live">RESUME</button></a> 
-            </div>
-            <div class="about-skills" aria-label="JavaScipt, Python, PostgreSQL, MySQL, React.js, Node.js, Express.js, Flask, Bootstrap, jQuery, Webflow, Git, GitHub, Jest">
-                <i aria-hidden="true" class="devicon-javascript-plain colored"></i>
-                <i aria-hidden="true" class="devicon-python-plain-wordmark colored"></i>
-                <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                <i aria-hidden="true" class="devicon-mysql-plain colored"></i>
-                <i aria-hidden="true" class="devicon-react-original colored"></i>
-                <i aria-hidden="true" class="devicon-nodejs-plain colored"></i>
-                <i aria-hidden="true" class="devicon-express-original colored"></i>
-                <i aria-hidden="true" class="devicon-flask-original colored"></i>
-                <i aria-hidden="true" class="devicon-bootstrap-plain-wordmark colored"></i>
-                <i aria-hidden="true" class="devicon-jquery-plain-wordmark colored"></i>
-                <i aria-hidden="true" class="devicon-webflow-original colored"></i>
-                <i aria-hidden="true" class="devicon-git-plain colored"></i>
-                <i aria-hidden="true" class="devicon-github-original colored"></i>
-                <i aria-hidden="true" class="devicon-jest-plain colored"></i>
             </div>
         </div>
     </section>
@@ -114,180 +97,183 @@
             <p>Some of the things I have worked on</p>
         </div>
         <ul>
-            
-            <li>
-                 <div class="row">
-                    <div class="column1">
-                        <h3 class="project-title">
-                        Thai Sport Bodyworks™
-                        </h3>
-                        <p class="icon-stack" aria-label="Webflow, JavaScript">
-                        <i aria-hidden="true" class="devicon-webflow-original colored"></i>
-                        <i aria-hidden="true" style="background-color: black;" class="devicon-javascript-plain colored"></i>
+            <li class="project">
+                <div class="project-header">
+                    <h3 class="project-title">Commercio Orders</h3>
+                </div>
+                <div class="project-data">
+                    <div class="project-image-container">
+                        <img alt="Screenshot of Commercio Orders" src="./images/orders.png" />
+                    </div>
+                    <div class="project-information">
+                        <h4 class="tech-stack">Tech stack: React, TypeScript, Material UI, Recoil/Redux, Jest, C#, SQL, Azure DevOps, AGILE</h4>
+                        <p class="project-description">
+                            Commercio Orders is a CRM platform for Promotional Products Industry distributors. Users are able to source competitively-priced 
+                            products, manage quotes, and send purchase orders with less back and forth with the suppliers, all in one system. <br> <br>
+                            I have worked on almost every feature of this application, but most notably I have: 
                         </p>
+                            <ul class="achievements">
+                                <li>Fully owned the <span class="strong">Status Management</span> feature for Purchase Orders, Quotes, 
+                                    and Products on the front end and did additional work on the back end
+                                </li>
+                                <li>Fully owned the <span class="strong">Supplier Connection</span> feature on the front end - implemented landing page, 
+                                    forms, credentials management, UI components and more
+                                </li>
+                                <li>Fully owned the <span class="strong">User Management</span> feature on the front end - 
+                                    implemented landing page, a user table, forms, invitations, admin controls, and more
+                                </li>
+                                <li>Worked on the <span class="strong">Purchase Orders Overview</span> feature as full-stack developer, 
+                                    creating the necessary web API endpoints on the back-end, and integrating said endpoints on the front end. 
+                                    Other work includes querying, sorting, filters, UI, and more
+                                </li>
+                                <li>Implemented the <span class="strong">Digital Art Proof</span> feature for purchase orders on both the front and back end</li>
+                                <li>Created internal tools and components for form handling which decreased development time of forms by 90%, improved performance 
+                                    across the application, eliminated a significant amount of code, reduced dependencies, normalized UX across forms, 
+                                    and increased test coverage by 22% and counting
+                                </li>
+                                <li>Led the charge on the complete refactor of the  <span class="strong">Purchase Order Configuration</span> and 
+                                    <span class="strong">Sharing</span> features on the front end, which eliminated numerous bugs and typescript errors, 
+                                    improved performance, organized and simplified the codebase, and eliminated over 5000 lines of code
+                                </li>
+                            </ul>
+                        <p class="description">
+                            Other duties included writing documentation, code reviews, participating in SCRUM ceremonies, and more.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://commerciosupport.zendesk.com/hc/en-us"><button class="btn-live" role="link">More information</button></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="project">
+                <div class="project-header">
+                    <h3 class="project-title">Thai Sport Bodyworks™</h3>
+                </div>
+                <div class="project-data">
+                    <div class="project-image-container">
+                        <img alt="Screenshot of Thai Sport Bodyworks™ website" src="./images/thai.png" />
+                    </div>
+                    <div class="project-information">
+                        <h4 class="tech-stack">Tech stack: Webflow, JavaScript</h4>
                         <p class="project-description">
                         Thai Sport Bodyworks™ is San Diego's premier massage/sports therapy center. 
-                        I am currently hard at work on the complete UI overhaul of their official website which serves 18,000+ active customers. 
-                        In this role I do pretty much everything - bringing concepts to life from design to implementation, 
+                        During my tenure, I was hard at work on the complete UI overhaul of their official website which serves 18,000+ active customers. 
+                        In this role I did pretty much everything - bringing concepts to life from design to implementation, 
                         refactoring pre-exisitng code, ensuring mobile responsiveness and cross-browser compatibility, 
-                        handling blog functionality through a Content Management System, as well as improving Search Engine Optimization. <br> <br>
-                        <span class="strong">Work in progress</span>
+                        handling blog functionality through a Content Management System, as well as improving Search Engine Optimization.
                         </p>
-                        <p class="project-links">
-                        <a target="_blank" href="https://thai-sport-main-website.webflow.io/"><button class="btn-live">LIVE</button></a>
-                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://www.thaisportmassage.com/"><button role="link" class="btn-live">Website</button></a>
+                        </div>
                 </div>
-                <div class="column2">
-                    <img alt="Screenshot of Thai Sport Bodyworks™ website" src="./images/thai.png" />
                 </div>
-            </div>
             </li>
 
-           <li>
-               <div class="row">
-                <div class="column1">
-                    <h3 class="project-title">
-                        Frog Feast
-                    </h3>
-                    <p class="icon-stack" aria-label="JavaScript">
-                        <i aria-hidden="true" style="background-color: black;" class="devicon-javascript-plain colored"></i>
-                    </p>
-                    <p class="project-description">
-                        Frog Feast is a browser-based game where you are a frog, eating bugs for a high score. 
-                        Press the left and right arrow on the keyboard (or tap the left or right side of the screen on mobile) 
-                        to extend your tongue at the desired direction and eat those delicious bugs. Don't eat the bees! <br><br>
-                        This Front-end only project was built in 7 days for a hackathon hosted by Mintbean and it earned 
-                        the Mintbean Star Award for "exemplary achievement in the field of web development".
-                    </p>
-                    <p class="project-links">
-                        <a target="_blank" href="https://lemonstener.github.io/frog-feast/"><button class="btn-live">LIVE</button></a>
-                        <a target="_blank" href="https://github.com/lemonstener/frog-feast"><button class="btn-source">GitHub</button></a>
-                    </p>
+            <li class="project">
+                <div class="project-header">
+                    <h3 class="project-title">Frog Feast</h3>
                 </div>
-                <div class="column2">
-                    <img alt="Screenshot of frog" src="./images/frog.png" />
+                <div class="project-data">
+                    <div class="project-image-container">
+                        <img alt="Screenshot of Frog Feast" src="./images/frog.png" />
+                    </div>
+                    <div class="project-information">
+                        <h4 class="tech-stack">Tech stack: JavaScript, HTML, CSS</h4>
+                        <p class="project-description">
+                            Frog Feast is a browser-based game where you are a frog, eating bugs for a high score. 
+                            Press the left and right arrow on the keyboard (or tap the left or right side of the screen on mobile) 
+                            to extend your tongue at the desired direction and eat those delicious bugs. Don't eat the bees! <br><br>
+                            This Front-end only project was built in 7 days for a hackathon hosted by Mintbean and it earned 
+                            the Mintbean Star Award for "exemplary achievement in the field of web development".
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://lemonstener.github.io/frog-feast/"><button role="link" class="btn-live">Website</button></a>
+                            <a target="_blank" href="https://github.com/lemonstener/frog-feast"><button role="link" class="btn-source">GitHub</button></a>
+                        </div>
                 </div>
-            </div>
-           </li>
+                </div>
+            </li>
 
-            <li>
-                <div class="row">
-                <div class="column1">
+            <li class="project">
+                <div class="project-header">
                     <h3 class="project-title">
                         Mixer
                     </h3>
-                    <p class="icon-stack" aria-label="React.js, Node.js, Express.js, PostgreSQL, Jest">
-                        <i aria-hidden="true" class="devicon-react-original colored"></i>
-                        <i aria-hidden="true" class="devicon-nodejs-plain colored"></i>
-                        <i aria-hidden="true" class="devicon-express-original colored"></i>
-                        <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                        <i aria-hidden="true" class="devicon-jest-plain colored"></i>
-                    </p>
-                    <p class="project-description">
-                        Mixer is a Full-stack cocktail mixology application that allows users to
-                        browse various cocktails and ingredients as well as adding cocktails to a 
-                        favorite page. <br>
-                        Cocktail and ingredient data comes from MixerDB, an API which I built for 
-                        the purposes of this project. Database features over 1000 cocktails and ingredients.
-                    </p>
-                    <p class="project-links">
-                        <a target="_blank" href="https://mixerdb.netlify.app/"><button class="btn-live">LIVE</button></a> 
-                        <a target="_blank" href="https://github.com/lemonstener/mixer-frontend"><button class="btn-source">GitHub</button></a>
-                    </p>
                 </div>
-                <div class="column2">
-                    <img alt="Screenshot of cocktails" src="./images/mixer.png" />
+                <div class="project-data">
+                    <div class="project-image-container">
+                        <img alt="Screenshot of Mixer" src="./images/mixer.png" />
+                    </div>
+                    <div class="project-information">
+                        <h4 class="tech-stack">Tech stack: React, Node, Express, PostgreSQL, Jest</h4>
+                        <p class="project-description">
+                            Mixer is a Full-stack cocktail mixology application that allows users to
+                            browse various cocktails and ingredients as well as adding cocktails to a 
+                            favorite page. <br>
+                            Cocktail and ingredient data comes from MixerDB, an API which I built for 
+                            the purposes of this project. Database features over 1000 cocktails and ingredients. <br>
+                            <span class="strong">Note:</span> the back-end is currently unavailable, due to Heroku removing the "free" tier option. 
+                            I'm currently working on resolving that, but you can still view all of the code on GitHub.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/lemonstener/mixer-db"><button role="link" class="btn-source">GitHub BE</button></a>
+                            <a target="_blank" href="https://github.com/lemonstener/mixer-frontend"><button role="link" class="btn-source">GitHub FE</button></a>
+                        </div>
                 </div>
-            </div>
+                </div>
             </li>
 
-            <li>
-                <div class="row">
-                <div class="column1">
+            <li class="project">
+                <div class="project-header">
                     <h3 class="project-title">
                         Steve
                     </h3>
-                    <p class="icon-stack" aria-label="React.js, Node.js, Express.js, PostgreSQL, Jest">
-                        <i class="devicon-html5-plain colored"></i>
-                        <i class="devicon-css3-plain colored"></i>
-                    </p>
-                    <p class="project-description">
-                        Steve is portfolio website template built with plain HTML and CSS that focuses on providing a clean,
-                        simplistic UI and great mobile responsiveness. It provides a good starting point for people 
-                        who need a portfolio website, who can then make it theirs by adding their own styling. <br>
-                        This portfolio website uses Steve as the base.
-                    </p>
-                    <p class="project-links">
-                        <a target="_blank" href="https://lemonstener.github.io/steve/"><button class="btn-live">LIVE</button></a> 
-                        <a target="_blank" href="https://github.com/lemonstener/steve"><button class="btn-source">GitHub</button></a>
-                    </p>
                 </div>
-                <div class="column2">
-                    <img alt="Screenshot of cocktails" src="./images/steve.png" />
+                <div class="project-data">
+                    <div class="project-image-container">
+                        <img alt="Screenshot of Steve" src="./images/steve.png" />
+                    </div>
+                    <div class="project-information">
+                        <h4 class="tech-stack">Tech stack: HTML, CSS</h4>
+                        <p class="project-description">
+                            Steve is a static, portfolio website template built with plain HTML and CSS that focuses on providing a clean,
+                            simplistic UI and great mobile responsiveness. It provides a good starting point for people 
+                            who need a portfolio website, who can then make it theirs by adding their own styling. <br>
+                            This portfolio website uses Steve as the base.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://lemonstener.github.io/steve/"><button role="link" class="btn-live">Website</button></a> 
+                            <a target="_blank" href="https://github.com/lemonstener/steve"><button role="link" class="btn-source">GitHub</button></a>
+                        </div>
                 </div>
-            </div>
+                </div>
             </li>
-            
-            <li>
-                <div class="row">
-                <div class="column1">
+
+            <li class="project">
+                <div class="project-header">
                     <h3 class="project-title">
                         The Forge
                     </h3>
-                    <p class="icon-stack" aria-label="Python, JavaScript, Flask, PostgreSQL">
-                        <i aria-hidden="true" style="background-color: black;" class="devicon-javascript-plain colored"></i>
-                        <i aria-hidden="true" style="background-color: blue;" class="devicon-python-plain-wordmark colored"></i>
-                        <i aria-hidden="true" class="devicon-flask-original colored"></i>
-                        <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                    </p>
-                    <p class="project-description">
-                        The Forge is a Full-stack, deck-building application for the digital card game Hearthstone. 
-                        Users can create decks, edit them, favorite decks made by other users, and browse general information about the cards.
-                        Card data comes from my own database, which I built for the purposes of this project and it features over 2000 cards.
-                    </p>
-                    <p><span class="strong">Note: </span>this application is hosted on Heroku, so it may take a few extra seconds to load.</p>
-                    <p class="project-links">
-                        <a target="_blank" href="https://hearthstone-forge.herokuapp.com/"><button class="btn-live">LIVE</button></a>
-                        <a target="_blank" href="https://github.com/lemonstener/hearthstone-forge"><button class="btn-source">GitHub</button></a>
-                    </p>
                 </div>
-                <div class="column2">
-                    <img alt="Screenshot of The Forge" src="./images/hearthstone.png" />
+                <div class="project-data">
+                    <div class="project-image-container">
+                        <img alt="Screenshot of The Forge" src="./images/hearthstone.png" />
+                    </div>
+                    <div class="project-information">
+                        <h4 class="tech-stack">Tech stack: JavaScript, Python, Flask, SQLAlchemy</h4>
+                        <p class="project-description">
+                            The Forge is a Full-stack, deck-building application for the digital card game Hearthstone. 
+                            Users can create decks, edit them, favorite decks made by other users, and browse general information about the cards.
+                            Card data comes from my own database, which I built for the purposes of this project and it features over 2000 cards. <br>
+                            <span class="strong">Note:</span> same as Mixer, this app is currently unavailable, due to Heroku removing the "free" tier option. 
+                            I'm currently working on resolving that, but you can still view all of the code on GitHub.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/lemonstener/hearthstone-forge"><button role="link" class="btn-source">GitHub</button></a>
+                        </div>
                 </div>
-            </div>
+                </div>
             </li>
-            
-            <!-- <li>
-                <div class="row">
-                <div class="column1">
-                    <h3 class="project-title">
-                        Jobly
-                    </h3>
-                    <p class="icon-stack" aria-label="React.js, Node.js, Express.js, PostgreSQL, Jest">
-                        <i aria-hidden="true" class="devicon-react-original colored"></i>
-                        <i aria-hidden="true" class="devicon-nodejs-plain colored"></i>
-                        <i aria-hidden="true" class="devicon-express-original colored"></i>
-                        <i aria-hidden="true" class="devicon-postgresql-plain-wordmark colored"></i>
-                        <i aria-hidden="true" class="devicon-jest-plain colored"></i>
-                    </p>
-                    <p class="project-description">
-                        Jobly is a Full-stack, mock job-searching application where users can search and "apply" 
-                        for positions listed by fictional companies. <br> <br>
-                        You will need an account, so either create one or use this one: <br><br>
-                        username: "testuser" <br>
-                        password: "password"
-                    </p>
-                    <p class="project-links">
-                        <a target="_blank" href="https://chunky-tent.surge.sh/"><button class="btn-live">LIVE</button></a>
-                         <a target="_blank" href="https://github.com/lemonstener/jobly-front-end"><button class="btn-source">GitHub</button></a>
-                    </p>
-                </div>
-                <div class="column2">
-                    <img alt="Screenshot of Jobly" src="./images/jobly.png" />
-                </div>
-            </div>
-            </li> -->
-            
         </ul>
     </section>
 

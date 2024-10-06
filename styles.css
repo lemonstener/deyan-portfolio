@@ -290,6 +290,10 @@ header ul li {
     .about-skills {
         font-size: 52px;
     }
+
+    .about-container {
+        width: 80%;
+    }
 }
 
 /* Projects-section */
@@ -305,28 +309,36 @@ header ul li {
     align-items: center;
 }
 
-#projects ul li {
-    background-color: transparent;
-}
-
-.row {
-    width: 1078px;
+.project {
+    width: 900px;
     margin: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     box-shadow: 2px 2px 5px gray;
     transform: scale(1.05);
+    background-color: white;
 }
 
-.column1 {
-    width: 450px;
-    height: 368px;
+.project-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header {
+    background-color: #1d1f1d;
+    color: white;
+}
+
+.project-information {
+    width: 100%;
+    min-height: 168px;
     background-color: white;
     line-height: 1.1em;
 }
 
-.column1 p {
+.project-information p {
     padding: 10px;
 }
 
@@ -336,17 +348,23 @@ header ul li {
     padding: 10px;
 }
 
-.column2 {
-    width: 678px;
+.project-image-container {
+    max-width: 90%;
     height: 368px;
 }
 
-.column2 img {
+.project-image-container img {
     width: 100%;
-    height: 100%;
+    height: 90%;
+    margin: 2% auto;
 }
 
 .strong {
+    font-weight: 900;
+}
+
+.tech-stack {
+    padding: 10px;
     font-weight: 900;
 }
 
@@ -362,23 +380,37 @@ header ul li {
     padding: 10px;
 }
 
+.achievements {
+    text-align: left;
+    list-style-type: disc;;
+    word-wrap: break-word;
+    padding: 0px 20px 0px 20px;
+}
+
+.achievements li {
+    margin-left: 60px;
+    width: 95%;
+}
+
 @media only screen and (max-width: 1150px) {
-    .row {
-        margin: 10px auto;
+    .project {
+        background-color: transparent;
         width: 80%;
-        flex-direction: column-reverse;
-        box-shadow: none;
     }
 
-    .column1 {
+    .project-information {
         width: 100%;
         height: auto;
         background-color: transparent;
     }
 
-    .column2 {
+    .project-image-container {
         width: 100%;
         height: auto;
+    }
+
+    .achievements li {
+        margin-left: 40px;
     }
 
     .icon-stack {
