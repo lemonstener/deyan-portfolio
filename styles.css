@@ -191,9 +191,10 @@ header ul li {
     position: absolute;
     top: 50px;
     left: 0;
-    height: 180px;
+    height: 210px;
     width: 100%;
     background-color: #1d1f1d;
+    box-shadow: 2px 2px 5px gray;
 }
   
 .mobile-menu li {
@@ -204,6 +205,11 @@ header ul li {
     margin: 24px;
     min-width: 24px;
     min-height: 24px;
+}
+
+.resume-link {
+    background-color: green;
+    padding: 4px 6px;
 }
   
 @media only screen and (max-width: 991px) {
@@ -279,25 +285,44 @@ header ul li {
     align-items: center;
 }
 
-.about-skills {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 64px;
+@media only screen and (max-width: 991px) {
+    .about-container {
+        width: 80%;
+    }
 }
 
-.about-skills i {
-    margin: 10px;
+/* Skills section */
+
+#skills {
+    background-color: rgba(230, 230, 230,.4);
+}
+
+.skills-container {
+    margin: 0 5%;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px gray;
+    text-align: center;
+}
+
+.skills-category {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.skills-list {
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 991px) {
-    .about-skills {
-        font-size: 52px;
+    #skills {
+        width: 100%;
     }
 
-    .about-container {
+    .skills-container {
         width: 80%;
     }
 }
@@ -305,7 +330,7 @@ header ul li {
 /* Projects-section */
 
 #projects {
-    background-color: rgba(230, 230, 230,.4);
+    background-color: white;
 }
 
 #projects ul {
