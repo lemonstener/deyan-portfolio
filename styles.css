@@ -62,6 +62,7 @@ button {
     transition: all .1s;
     font-weight: bold;
     margin: 10px auto;
+    border-radius: 4px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -108,6 +109,7 @@ header {
     z-index: 2;
     padding: 0 20px;
     background-color: #1d1f1d;
+    box-shadow: 2px 2px 5px gray;
     width: 99%;
     height: 50px;
     display: flex;
@@ -239,7 +241,7 @@ header ul li {
 
 #hero {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-image: url(./images/stock-background.jpg);
     background-position: top;
     background-size: cover;
@@ -285,6 +287,75 @@ header ul li {
     align-items: center;
 }
 
+.technologies {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+}
+
+.technologies h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 900;
+    margin: 20px 0px;
+}
+
+.tech-stack {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.technology {
+    width: 6rem;
+    border: 2px solid #ADD8E6;
+    border-radius: 6px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 2px 2px 5px #ADD8E6;
+    background-color: white;
+}
+
+.technologies .technology i {
+    font-size: 4rem;
+}
+
+.tech-used {
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tech-stack {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .tech-stack {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .technology {
+        width: 4rem;
+    }
+
+    .technology span {
+        font-size: .8rem;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .about-container {
         width: 80%;
@@ -295,26 +366,8 @@ header ul li {
 
 #skills {
     background-color: rgba(230, 230, 230,.4);
-}
-
-.skills-container {
-    margin: 0 5%;
-    width: 90%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px gray;
-    text-align: center;
-}
-
-.skills-category {
-    font-size: 1.3rem;
-    font-weight: 900;
-}
-
-.skills-list {
-    padding: 10px;
-    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 991px) {
@@ -391,11 +444,6 @@ header ul li {
 }
 
 .strong {
-    font-weight: 900;
-}
-
-.tech-stack {
-    padding: 10px;
     font-weight: 900;
 }
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="preload" as="image" href="./images/stock-background.jpg">
     <link rel="preload" as="image" href="./images/orders.png">
     <link rel="preload" as="image" href="./images/thai.png">
@@ -71,18 +72,15 @@
                 <div class="about-bio">
                     <p>
                     Hello World! My name is Deyan and I am Front-end Software Engineer. I am originally from Bulgaria and have lived in the United States since 2012.<br><br>
-                    I specialize in developing SPA applications with React, but my skillset extends well beyond that. Throughout my career I have owned a number of crucial features, 
+                    I specialize in developing SPA applications with React and JavaScript, but my skillset extends well beyond that. Throughout my career I have owned a number of crucial features, 
                     refactors, and bug fixes, as well as high code test coverage. I am also more than capable of producing
-                    quality back-end work when needed, as demonstrated by my work experience and personal projects. At my previous job I was able to successfully step in 
-                    as full-stack developer on multiple occasions. My flexibility allowed my team to eliminate bottlenecks, reduce development costs, and ship features faster. <br><br>
+                    quality back-end work when needed, as demonstrated by my work experience and personal projects. <br> <br>
                     I have always maintained a "Never get comfortable, always challenge yourself" mentality, which has helped me grow 
-                    immensely in all of my roles. I enjoy tackling complex problems, crafting innovative solutions, and challenging the conventions 
-                    of our industry. <br><br>
-                    I am currently looking for my next position within the St. Louis Metropolitan area, as well as remotely. <br> <br>
+                    immensely in all of my roles. I enjoy tackling complex problems, crafting innovative solutions, and cracking a silly joke in-between. <br><br>
                     If you like what you see, feel free to check out my resume or reach out to me directly! I am looking 
                     forward to hearing from you! 
                     </p> <br>
-                    <a aria-label="Download Resume in new tab" target="_blank" href="https://drive.google.com/file/d/1l7zHK0DgimsqvZWgbf2tpORfGTKAwQj6/view?usp=sharing"><button role="link" class="btn-live cv-button">RESUME</button></a> 
+                    <a target="_blank" aria-label="Opens resume in new tab" href="https://drive.google.com/file/d/1l7zHK0DgimsqvZWgbf2tpORfGTKAwQj6/view?usp=sharing"><button role="link" class="btn-live">Resume</button></a>
                 </div>
             </div>
         </section>
@@ -92,22 +90,64 @@
     <section id="skills">
         <div class="section-header">
             <h2>Skills</h2>
-            <p>I specialize in front-end Web development</p>   
+            <p>I specialize in Front-end Web development</p>   
         </div>
 
-        <div class="skills-container">
-            <h3 class="skills-category">Specializations:</h3>
-            <p class="skills-list">React, Node, TypeScript, JavaScript, HTML, CSS, React Testing Library</p><br>
-            <h3 class="skills-category">Other tools:</h3>
-            <p class="skills-list">SQL, Python, C#, Express, Webflow</p><br>
-            <h3 class="skills-category">Methodologies and patterns:</h3>
-            <p class="skills-list">Agile, Scrum, REST, CRUD, MVC, OOP</p><br>
-            <h3 class="skills-category">I am a big proponent of:</h3>
-            <p class="skills-list">
-                Simple and flexible code, Accessibility, Consistent UX, Mobile responsiveness, Testing, Continuous learning, Delivering 
-                value, Communication, Knowledge sharing
-            </p>
-        </div>
+        <div class="technologies">
+            <h3>Specializations</h3>
+                <div class="tech-stack">
+                    <div class="technology">
+                        <i class="devicon-react-original colored"></i>
+                        <span>REACT</span>
+                    </div>
+                    <div class="technology">
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                        <span>NODE</span>
+                    </div> 
+                    <div class="technology">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JAVASCRIPT</span>
+                    </div> 
+                    <div class="technology">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TYPESCRIPT</span>
+                    </div> 
+                    <div class="technology">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <span>HTML5</span>
+                    </div> 
+                    <div class="technology">
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="technology">
+                        <i class="devicon-jest-plain colored"></i>
+                        <span>JEST</span>
+                    </div>
+                </div>
+            <h3>Knowledgeable in</h3>
+                <div class="tech-stack">
+                    <div class="technology">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>PYTHON</span>
+                    </div>
+                    <div class="technology">
+                        <i class="devicon-azuresqldatabase-plain colored"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="technology">
+                        <i class="devicon-express-original colored"></i>
+                        <span>EXPRESS</span>
+                    </div>
+                    <div class="technology">
+                        <i class="devicon-flask-original colored"></i>
+                        <span>FLASK</span>
+                    </div>
+                    <div class="technology">
+                        <i class="devicon-webflow-original colored"></i>
+                        <span>WEBFLOW</span>
+                    </div>
+                </div>
         
     </section>
 
@@ -128,7 +168,7 @@
                         <img alt="Screenshot of Commercio Orders" src="./images/orders.png" />
                     </div>
                     <div class="project-information">
-                        <h4 class="tech-stack">Tech stack: React, TypeScript, Material UI, Recoil/Redux, React Testing Library with Jest, C#, SQL, Azure DevOps, REST, AGILE</h4>
+                        <h4 class="tech-used">Tech stack: React, TypeScript, Material UI, Recoil/Redux, React Testing Library with Jest, C#, SQL, Azure DevOps, REST, AGILE</h4>
                         <p class="project-description">
                             Commercio Orders is a CRM platform for Promotional Products Industry distributors. Users are able to source competitively-priced 
                             products, manage quotes, and send purchase orders with less back and forth with the suppliers, all in one system. <br> <br>
@@ -177,7 +217,7 @@
                         <img alt="Screenshot of Thai Sport Bodyworks™ website" src="./images/thai.png" />
                     </div>
                     <div class="project-information">
-                        <h4 class="tech-stack">Tech stack: Webflow, JavaScript</h4>
+                        <h4 class="tech-used">Tech stack: Webflow, JavaScript</h4>
                         <p class="project-description">
                         Thai Sport Bodyworks™ is San Diego's premier massage/sports therapy center. 
                         During my tenure, I was hard at work on the complete UI overhaul of their official website which serves 18,000+ active customers. 
@@ -201,7 +241,7 @@
                         <img alt="Screenshot of Frog Feast" src="./images/frog.png" />
                     </div>
                     <div class="project-information">
-                        <h4 class="tech-stack">Tech stack: JavaScript, HTML, CSS</h4>
+                        <h4 class="tech-used">Tech stack: JavaScript, HTML, CSS</h4>
                         <p class="project-description">
                             Frog Feast is a browser-based game where you are a frog, eating bugs for a high score. 
                             Press the left and right arrow on the keyboard (or tap the left or right side of the screen on mobile) 
@@ -228,7 +268,7 @@
                         <img alt="Screenshot of Mixer" src="./images/mixer.png" />
                     </div>
                     <div class="project-information">
-                        <h4 class="tech-stack">Tech stack: React, Node, Express, PostgreSQL, Jest</h4>
+                        <h4 class="tech-used">Tech stack: React, Node, Express, PostgreSQL, Jest</h4>
                         <p class="project-description">
                             Mixer is a Full-stack cocktail mixology application that allows users to
                             browse various cocktails and ingredients as well as adding cocktails to a 
@@ -257,7 +297,7 @@
                         <img alt="Screenshot of The Forge" src="./images/hearthstone.png" />
                     </div>
                     <div class="project-information">
-                        <h4 class="tech-stack">Tech stack: JavaScript, Python, Flask, SQLAlchemy</h4>
+                        <h4 class="tech-used">Tech stack: JavaScript, Python, Flask, SQLAlchemy</h4>
                         <p class="project-description">
                             The Forge is a Full-stack, deck-building application for the digital card game Hearthstone. 
                             Users can create decks, edit them, favorite decks made by other users, and browse general information about the cards.
