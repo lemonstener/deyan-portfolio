@@ -255,8 +255,8 @@ header ul li {
 #hero {
     width: 100vw;
     height: 30vh;
-    background-image: url(./images/stock-background.jpg);
-    background-position: top;
+    background-image: url(./images/farzad-p-xSl33Wxyc-unsplash.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -273,6 +273,19 @@ header ul li {
     #hero {
         height: 100vh;
     }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+#hero div {
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
 }
 
 #hero h1 {
@@ -455,7 +468,6 @@ header ul li {
 .slide-tech {
     font-size: 2.5rem;
     opacity: 2;
-    cursor: pointer;
 }
 
 /* Tooltip */
