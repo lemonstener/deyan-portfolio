@@ -2,11 +2,12 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 body {
     font-family: 'PT Sans', sans-serif;
-    width: 100vw;
+    position: absolute;
 }
 
 h1, h2, h3, h4, h5 , h6 {
@@ -18,7 +19,7 @@ p {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
     padding: 60px 0;
     display: flex;
     flex-direction: column;
@@ -120,10 +121,9 @@ section {
 
 header {
     z-index: 2;
-    padding: 0 20px;
     background-color: #1d1f1d;
     box-shadow: 2px 2px 5px gray;
-    width: 100vw;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -141,6 +141,7 @@ header a {
     font-size: 18px;
     display: flex;
     align-items: center;
+    padding: 0 10px;
 }
   
 #brand a {
@@ -745,6 +746,7 @@ header ul li {
 
 footer {
     background-color: #1d1f1d;
+    width: 100%;
     color: white;
 }
 
