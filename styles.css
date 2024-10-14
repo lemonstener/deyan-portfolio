@@ -123,7 +123,7 @@ header {
     padding: 0 20px;
     background-color: #1d1f1d;
     box-shadow: 2px 2px 5px gray;
-    width: 99%;
+    width: 100vw;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -775,6 +775,8 @@ footer {
 }
 
 .contact-links a {
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     color: white;
     cursor: pointer;
@@ -787,16 +789,16 @@ footer {
         color: #4681f4;
     }
 
-    .contact-links {
+    /* .contact-links {
         display: none;
-    }
+    } */
 }
 
 @media only screen and (max-width: 991px) {
     .contact-heading {
         font-size: 1.5rem;
     }
-    .contact-icons {
+    /* .contact-icons {
         display: none;
-    }
+    } */
 }
