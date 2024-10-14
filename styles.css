@@ -38,7 +38,7 @@ section {
     margin-bottom: 10px;
 }
 
-.section-header p {
+.section-header h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
@@ -214,12 +214,6 @@ header ul li {
   
 .mobile-menu li {
     margin-bottom: 10px;
-}
-
-.cv-button {
-    margin: 24px;
-    min-width: 24px;
-    min-height: 24px;
 }
 
 .resume-link {
@@ -419,6 +413,11 @@ header ul li {
 #projects {
     background-color: white;
     box-shadow: 3px 3px 3px #333;
+}
+
+#projects-introduction {
+    max-width: 1000px;
+    width: 80%;
 }
 
 /* Projects carousel for bigger screens */
@@ -757,10 +756,6 @@ footer {
     text-align: center;
 }
 
-.contact-heading span {
-    text-decoration: line-through;
-}
-
 .contact-icons {
     font-size: 2rem;
     color: black;
@@ -776,10 +771,25 @@ footer {
     transition: all .2s;
 }
 
+.contact-links {
+    margin-top: 10px;
+}
+
+.contact-links a {
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 991.1px) {
     .contact-icons i:hover {
         transform: scale(1.2);
         color: #4681f4;
+    }
+
+    .contact-links {
+        display: none;
     }
 }
 
@@ -788,6 +798,6 @@ footer {
         font-size: 1.5rem;
     }
     .contact-icons {
-        font-size: 2rem;
+        display: none;
     }
 }
