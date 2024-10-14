@@ -267,7 +267,6 @@ header ul li {
     font-weight: bold;
     color: white;
     text-align: center;
-    /* filter: grayscale(10); */
 }
 
 @media only screen and (max-height: 450px) {
@@ -449,6 +448,11 @@ header ul li {
     height: 100%;
 }
 
+.slide-title-and-tech {
+    display: flex;
+    justify-content: space-between;
+}
+
 .slide-description {
     background-color: rgba(0,0,0,0.8);
     padding-top: 4px;
@@ -460,13 +464,9 @@ header ul li {
 .slide-description h3 {
     margin-bottom: 8px;
     font-size: 1.2rem;
-    display: inline-block;
 }
 
 .slide-tech-stack {
-    position: absolute;
-    right: 0;
-    top: 4px;
     margin-right: 4px;
 }
 
