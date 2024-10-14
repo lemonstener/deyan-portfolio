@@ -412,7 +412,6 @@ header ul li {
 
 #projects {
     background-color: white;
-    box-shadow: 3px 3px 3px #333;
 }
 
 #projects-introduction {
@@ -768,7 +767,7 @@ footer {
     margin: 10px;
     color: white;
     cursor: pointer;
-    transition: all .2s;
+    transition: all .1s;
 }
 
 .contact-links {
