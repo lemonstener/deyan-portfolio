@@ -570,8 +570,10 @@ header ul li {
   background-color: rgba(0,0,0,0.8);
 }
 
-.prev:hover, .next:hover {
-  background-color: #4681f4;
+@media only screen and (min-width: 1200px) {
+    .prev:hover, .next:hover {
+        background-color: #4681f4;
+    }
 }
 
 .slide-position {
@@ -598,8 +600,14 @@ header ul li {
   transition: background-color 0.2s ease;
 }
 
-.active, .dot:hover {
-  background-color: #4681f4;
+@media only screen and (min-width: 1200px) {
+    .dot:hover {
+        background-color: #4681f4;
+    }
+}
+
+.active {
+    background-color: #4681f4;
 }
 
 .fade {
@@ -744,6 +752,10 @@ footer {
     color: white;
 }
 
+footer p {
+    font-size: .8rem;
+}
+
 .contact-heading {
     font-size: 2rem;
     font-weight: bold;
@@ -768,33 +780,48 @@ footer {
 
 .contact-links {
     margin-top: 10px;
+    display: flex;
 }
 
 .contact-links a {
     display: flex;
-    flex-direction: column;
     margin: 10px;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 
-@media only screen and (min-width: 991.1px) {
+.contact-links i {
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 1200.01px) {
     .contact-icons i:hover {
         transform: scale(1.2);
         color: #4681f4;
     }
 
-    /* .contact-links {
+    .contact-links {
         display: none;
-    } */
+    }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
     .contact-heading {
         font-size: 1.5rem;
     }
-    /* .contact-icons {
+    .contact-icons {
         display: none;
-    } */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-links {
+        flex-direction: column;
+        margin-left: -40px;
+    }
+
+    .contact-links a {
+        margin: 5px 0;
+    }
 }
