@@ -224,7 +224,8 @@
                     </div>
                     <p>
                         Commercio Orders is a CRM platform for Promotional Products Industry distributors. Users are able to source competitively-priced 
-                        products, manage quotes, and send purchase orders with less back and forth with the suppliers, all in one system.
+                        products, manage quotes, and send purchase orders with less back and forth with the suppliers, all in one system...
+                        <button onclick="openModal('orders')" aria-label="Opens a dialog with more information" class="btn-see-more">See more</button>
                     </p>
                     <a target="_blank" class="btn-live" aria-label="Opens Orders Demo website in new tab" href="https://commercio.com/order-management">Demo <i class="fa-solid fa-link"></i></a>
                     <a target="_blank" class="btn-live" aria-label="Opens Orders Knowledge Base website in new tab" href="https://commerciosupport.zendesk.com/hc/en-us">Knowledge base <i class="fa-solid fa-link"></i></a>
@@ -257,8 +258,9 @@
                         </div>
                     </div>
                     <p>
-                        Thai Sport Bodyworks is San Diego's premier massage/sports therapy center. Move, Feel, and Live your best life!
-                        We’re a next generation wellness business that provides everything you need to get you moving at your best — no matter where you’re at today!
+                        Thai Sport Bodyworks is San Diego's premier massage/sports therapy center.
+                        We’re a next generation wellness business that provides everything you need to get you moving at your best — no matter where you’re at today...
+                        <button onclick="openModal('thai')" aria-label="Opens a dialog with more information" class="btn-see-more">See more</button>
                     </p>
                     <a target="_blank" class="btn-live" aria-label="Opens website in new tab" href="https://www.thaisportmassage.com/">Website <i class="fa-solid fa-link"></i></a>
                 </div>
@@ -294,8 +296,9 @@
                         </div>
                     </div>
                     <p>
-                        Frog Feast is a browser-based game I built as a solo-dev in 7 days where you are a frog, eating bugs for a high score. This was my entry for the August Mintbean 
-                        Hiring Hackathon of 2021 and it won the Mintbean Star Award for "exemplary achievement in the field of web development"!
+                        Frog Feast is a browser-based game I built in 7 days where you are a frog, eating bugs for a high score. 
+                        Winner of the Mintbean Star Award for "exemplary achievement in the field of web development"...
+                        <button onclick="openModal('frog')" aria-label="Opens a dialog with more information" class="btn-see-more">See more</button>
                     </p>
                     <a target="_blank" class="btn-live" aria-label="Opens website in new tab" href="https://lemonstener.github.io/frog-feast/">Website <i class="fa-solid fa-link"></i></a>
                     <a target="_blank" class="btn-source" aria-label="Opens GitHub repository in new tab" href="https://github.com/lemonstener/frog-feast">Source code <i class="fa-solid fa-link"></i></a>
@@ -369,7 +372,8 @@
                             </div>
                             <p class="project-description">
                                 Commercio Orders is a CRM platform for Promotional Products Industry distributors. Users are able to source competitively-priced 
-                                products, manage quotes, and send purchase orders with less back and forth with the suppliers, all in one system.
+                                products, manage quotes, and send purchase orders with less back and forth with the suppliers, all in one system... 
+                                <button onclick="openModal('orders')" aria-label="Opens a dialog with more information" class="btn-see-more">See more</button>
                             </p>
                             <a target="_blank" class="btn-live" aria-label="Opens Orders Demo website in new tab" href="https://commercio.com/order-management">Demo <i class="fa-solid fa-link"></i></a>
                             <a target="_blank" class="btn-live" aria-label="Opens Orders Knowledge Base website in new tab" href="https://commerciosupport.zendesk.com/hc/en-us">Knowledge base <i class="fa-solid fa-link"></i></a>
@@ -404,8 +408,9 @@
                                 </div>
                             </div>
                             <p class="project-description">
-                                Thai Sport Bodyworks is San Diego's premier massage/sports therapy center. Move, Feel, and Live your best life!
-                                We’re a next generation wellness business that provides everything you need to get you moving at your best — no matter where you’re at today!
+                                Thai Sport Bodyworks is San Diego's premier massage/sports therapy center.
+                                We’re a next generation wellness business that provides everything you need to get you moving at your best — no matter where you’re at today...
+                                <button onclick="openModal('thai')" aria-label="Opens a dialog with more information" class="btn-see-more">See more</button>
                             </p>
                             <a target="_blank" class="btn-live" aria-label="Opens website in new tab" href="https://www.thaisportmassage.com/">Website <i class="fa-solid fa-link"></i></a>
                     </div>
@@ -444,8 +449,9 @@
                                 </div> 
                             </div>
                             <p class="project-description">
-                                Frog Feast is a browser-based game I built as a solo-dev in 7 days where you are a frog, eating bugs for a high score. This was my entry for the August Mintbean 
-                                Hiring Hackathon of 2021 and it won the Mintbean Star Award for "exemplary achievement in the field of web development"!
+                                Frog Feast is a browser-based game I built in 7 days where you are a frog, eating bugs for a high score. 
+                                Winner of the Mintbean Star Award for "exemplary achievement in the field of web development"...
+                                <button onclick="openModal('frog')" aria-label="Opens a dialog with more information" class="btn-see-more">See more</button>
                             </p>
                             <a target="_blank" class="btn-live" aria-label="Opens website in new tab" href="https://lemonstener.github.io/frog-feast/">Website <i class="fa-solid fa-link"></i></a>
                             <a target="_blank" class="btn-source" aria-label="Opens GitHub repository in new tab" href="https://github.com/lemonstener/frog-feast">Source code <i class="fa-solid fa-link"></i></a>
@@ -455,6 +461,99 @@
             </ul>
         </section>
     </main>
+
+    <!-- Modals -->
+
+    <div id="modal-orders" class="modal-overlay" aria-label="Close modal" onclick="closeModal('orders')">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Commercio Orders</h3>
+                <button class="modal-close" onclick="closeModal('orders')"><i class="fa-solid fa-circle-xmark"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-img-container">
+                    <img alt="Screenshot of Commercio Orders" src="./images/orders.png">
+                </div>
+                <p>
+                    I joined this project as a Front-End Engineer, working with React, Node, TypeScript, Material UI, and Redux/Recoil. 
+                    I later transitioned to a Full-Stack Engineer role, using C# and Microsoft SQL Server to enhance team efficiency, accelerate feature rollouts, 
+                    and save significant development costs.
+                </p>
+                <p>
+                    Throughout my tenure, I contributed to nearly every feature, as well as taking full ownership from creation to maintenance on a number of them. 
+                    I also played a key role in developing SDK tooling, by creating reusable hooks and components that standardized user experience and 
+                    reduced development time. I also increased app-wide test coverage by 22% using React Testing Library.
+                </p>
+                <p>
+                    Additionally, I demonstrated leadership by spearheading the overhaul of the Order Configuration and Invoicing features, 
+                    resulting in improved code readability, scalability, and performance, while reducing the codebase size and 
+                    fixing numerous TypeScript errors and hidden bugs.
+                </p>
+            </div>
+            <div class="modal-actions">
+                <a target="_blank" class="btn-live" aria-label="Opens Orders Demo website in new tab" href="https://commercio.com/order-management">Demo <i class="fa-solid fa-link"></i></a>
+                <a target="_blank" class="btn-live" aria-label="Opens Orders Knowledge Base website in new tab" href="https://commerciosupport.zendesk.com/hc/en-us">Knowledge base <i class="fa-solid fa-link"></i></a> 
+            </div>
+        </div>
+    </div> 
+
+    <div id="modal-thai" class="modal-overlay" aria-label="Close modal" onclick="closeModal('thai')">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Thai Sport Bodyworks - Official website</h3>
+                <button class="modal-close" onclick="closeModal('orders')"><i class="fa-solid fa-circle-xmark"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-img-container">
+                    <img alt="Screenshot of Thai Sport Bodyworks" src="./images/thai.png">
+                </div>
+                <p>
+                    I joined this project to deliver a comprehensive UI makeover using Webflow, HTML, CSS, and JavaScript, collaborating closely with the owner. 
+                    My goal was to create a modern design that would engage users and boost conversion rates.
+                </p>
+                <p>
+                    One of my key contributions was designing the new homepage, which remains a cornerstone of the final product. 
+                    I also implemented a CMS to manage the blog functionality and more. 
+                </p>
+                <p>
+                    In addition to these tasks, I ensured the project met accessibility standards, maintained responsiveness, and achieved cross-browser compatibility. 
+                    I also leveraged my expertise to suggest additional UX improvements.
+                </p>
+            </div>
+            <div class="modal-actions">
+                <a target="_blank" class="btn-live" aria-label="Opens website in new tab" href="https://www.thaisportmassage.com/">Website <i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div> 
+
+    <div id="modal-frog" class="modal-overlay" aria-label="Close modal" onclick="closeModal('frog')">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Frog Feast</h3>
+                <button class="modal-close" onclick="closeModal('frog')"><i class="fa-solid fa-circle-xmark"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-img-container">
+                    <img alt="Screenshot of Frog Feast" src="./images/frog.png">
+                </div>
+                <p>
+                    This was my entry for the August Hiring Hackathon of 2021, hosted by Mintbean.
+                </p>
+                <p>
+                    I joined the competition as a solo-dev (we had the option of teaming up with others) and spent the next week prototyping 
+                    and coding a fun and addictive gameplay-loop.
+                </p>
+                <p>
+                    I hope to one day port this over to a fully mobile experience (with original sprites of course). But until then, enjoy the browser version!
+                </p>
+            </div>
+            <div class="modal-actions">
+                <a target="_blank" class="btn-live" aria-label="Opens website in new tab" href="https://lemonstener.github.io/frog-feast/">Website <i class="fa-solid fa-link"></i></a>
+                <a target="_blank" class="btn-source" aria-label="Opens GitHub repository in new tab" href="https://github.com/lemonstener/frog-feast">Source code <i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div> 
+    
 
     <!-- Contact & Footer -->
 
@@ -488,7 +587,6 @@
                 <p>Website designed and developed by Deyan Vasilev</p>
         </section>
     </footer>
-
 <script src="app.js"></script>
 
 </body>

@@ -30,3 +30,39 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+const openModal = (projectTitle) => {
+  const html = document.querySelector("html");
+  const overlay = document.getElementById("modal-overlay");
+  const modal = document.getElementById(`modal-${projectTitle}`);
+
+  Object.assign(html.style, {
+    overflow: "hidden",
+  });
+
+  Object.assign(modal.style, {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  });
+};
+
+const closeModal = (projectTitle) => {
+  const className = window.event.target.className;
+  const html = document.querySelector("html");
+  const modal = document.getElementById(`modal-${projectTitle}`);
+
+  if (
+    className === "fa-solid fa-circle-xmark" ||
+    className === "modal-close" ||
+    className === "modal-overlay"
+  ) {
+    Object.assign(html.style, {
+      overflow: "auto",
+    });
+
+    Object.assign(modal.style, {
+      display: "none",
+    });
+  }
+};
