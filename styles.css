@@ -34,14 +34,14 @@ p {
     display: none;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
     overflow: auto;
 }
 
 .modal {
     z-index: 4;
-    width: 80%;
-    max-width: 1000px;
+    width: 70%;
+    max-width: 800px;
     margin: auto;
     overflow: auto;
     display: flex;
@@ -49,28 +49,23 @@ p {
     justify-content: center;
     align-items: center;
     background-color: white;
+    border: 2px solid #1d1f1d;
     border-radius: 8px;
+    box-shadow: 2px 2px 5px #1d1f1d;
+
 }
 
 .modal-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    border-bottom: 3px solid #1d1f1d;
     width: 100%;
-}
-
-.modal-header h3 {
-    margin-top: 14px;
-    margin-left: 18px;
-    align-self: flex-start;
-    font-size: 1.3rem;
 }
 
 .modal-close {
     cursor: pointer;
     background-color: transparent;
-    color: #4681f4;
+    color: #ff6863;
     border: none;
     padding: 0;
     font-size: 1.5rem;
@@ -80,25 +75,24 @@ p {
 }
 
 .modal-close:hover {
-    color: red;
+    color: #4681f4;
 }
 
-.modal-img-container {
-    width: 100%;
-    height: 100%;
-    background-color: #1d1f1d;
-    border-bottom: 3px solid #1d1f1d;
-    display: flex;
-    justify-content: center;
+.modal-content i {
+    display: block;
+    width: 1.5rem;
+    font-size: 1.5rem;
+    margin: auto;
+    color: #4681f4;
 }
 
-.modal-img-container img {
-    width: 50%;
+.modal-content p {
+    padding-bottom: 20px;
 }
 
-.modal-actions {
-    width: 100%;
-    display: flex;
+.modal-content h3 {
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 550px) {
@@ -311,7 +305,7 @@ header ul li {
     position: absolute;
     top: 50px;
     left: 0;
-    height: 210px;
+    height: 170px;
     width: 100%;
     background-color: #1d1f1d;
     box-shadow: 2px 2px 5px gray;
