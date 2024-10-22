@@ -53,7 +53,7 @@ const closeModal = (projectTitle) => {
   const modal = document.getElementById(`modal-${projectTitle}`);
 
   if (
-    className === "fa-solid fa-circle-xmark" ||
+    className === "btn-source" ||
     className === "modal-close" ||
     className === "modal-overlay"
   ) {
