@@ -1,4 +1,25 @@
+// Navbar
+
 const toggleMobileMenu = (menu) => menu.classList.toggle("open");
+
+// Animations
+
+const animatables = document.querySelectorAll(".animatable");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate__animated");
+      entry.target.classList.add("animate__fadeInUp");
+    }
+  });
+});
+
+animatables.forEach((element) => {
+  observer.observe(element);
+});
+
+// Carousel
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -33,7 +54,6 @@ function showSlides(n) {
 
 const openModal = (projectTitle) => {
   const html = document.querySelector("html");
-  const overlay = document.getElementById("modal-overlay");
   const modal = document.getElementById(`modal-${projectTitle}`);
 
   Object.assign(html.style, {
